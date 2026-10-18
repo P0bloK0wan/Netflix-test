@@ -23,3 +23,5 @@ Spec approved by user. Execution proceeds inline under that authorization.
 
 - Final validation: 12 unit/structural checks passed; 9 Chromium flows passed; TypeScript + Vite production build passed. Both review findings have regression coverage and are fixed. No deferred findings.
 - Production preview was inspected on desktop and mobile. Screenshots are included in docs/preview-desktop.png and docs/preview-mobile.png.
+
+- First GitHub CI run passed seven browser cases but both real-video cases failed to reach readyState 2. Local system Chromium and locally installed Playwright Chromium both played the MP4; exact remote decoding cause was not established from the initial logs. Added WebM VP9/Opus delivery with MP4 fallback and media-error diagnostics for failed future runs. All tests remain enabled.

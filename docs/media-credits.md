@@ -26,3 +26,7 @@ Netflix é marca de seu respectivo titular. Este projeto é uma demonstração i
 ## Imagens dos filmes abertos
 
 `public/media/sintel.jpg` (34 s) e `public/media/bunny.jpg` (16 s) são quadros extraídos dos respectivos trailers locais, com a mesma atribuição e licença CC BY 3.0 acima. Substituem as fotografias genéricas nos cards desses dois filmes.
+
+## Compatibilidade de reprodução
+
+Versões WebM (VP9/Opus) foram geradas a partir dos trailers para ampliar compatibilidade entre navegadores. Os MP4 originais permanecem como alternativa. A conversão altera a codificação, sem editar o conteúdo, e mantém as mesmas atribuições CC BY 3.0.

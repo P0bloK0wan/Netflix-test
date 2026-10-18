@@ -97,8 +97,16 @@ export function Player({
             save();
             setFailed(true);
           }}
-          src={title.video}
-        />
+        >
+          {title.videoWebm && (
+            <source src={title.videoWebm} type="video/webm" />
+          )}
+          <source
+            src={title.video}
+            type="video/mp4"
+            onError={() => setFailed(true)}
+          />
+        </video>
         {failed && (
           <div className="video-error" role="alert">
             <Icon name="info" size={36} />

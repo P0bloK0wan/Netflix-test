@@ -50,7 +50,7 @@ test("keyboard dialog focus and unavailable media", async ({ page }) => {
   ).toBe(true);
   await page.keyboard.press("Escape");
   await expect(trigger).toBeFocused();
-  await page.route("**/media/*.mp4", (route) => route.abort());
+  await page.route(/\/media\/.*\.(mp4|webm)$/, (route) => route.abort());
   await page
     .getByRole("button", { name: "Assistir agora", exact: true })
     .click();
@@ -142,4 +142,30 @@ test("retry preserves progress after a mid-playback failure", async ({
         .visitor.progress.horizon.position,
   );
   expect(saved).toBeGreaterThanOrEqual(20);
+});
+
+test.afterEach(async ({ page, browser }, testInfo) => {
+  if (testInfo.status !== testInfo.expectedStatus) {
+    console.log(
+      "MEDIA_DIAGNOSTICS",
+      JSON.stringify({
+        browser: browser.version(),
+        media: await page
+          .locator("video")
+          .evaluateAll((videos) =>
+            videos.map((element) => {
+              const video = element as HTMLVideoElement;
+              return {
+                src: video.currentSrc,
+                readyState: video.readyState,
+                error: video.error?.message,
+                code: video.error?.code,
+                networkState: video.networkState,
+              };
+            }),
+          )
+          .catch(() => []),
+      }),
+    );
+  }
 });

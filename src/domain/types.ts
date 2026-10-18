@@ -11,6 +11,7 @@ export interface Title {
   duration: string;
   image: string;
   video: string;
+  videoWebm?: string;
   demoCredit: string;
   color: string;
   featured?: boolean;

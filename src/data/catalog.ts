@@ -6,7 +6,11 @@ export const profiles: Profile[] = [
 ];
 const demoCredit =
   "Trailer de demonstração: Sintel · Blender Foundation · CC BY 3.0";
-const base = { video: "/media/sintel-trailer.mp4", demoCredit };
+const base = {
+  video: "/media/sintel-trailer.mp4",
+  videoWebm: "/media/sintel-trailer.webm",
+  demoCredit,
+};
 export const catalog: Title[] = [
   {
     ...base,
@@ -173,6 +177,7 @@ export const catalog: Title[] = [
     image: "/media/bunny.jpg",
     color: "#c2be8b",
     video: "/media/bunny-trailer.mp4",
+    videoWebm: "/media/bunny-trailer.webm",
     demoCredit: "Trailer: Big Buck Bunny · Blender Foundation · CC BY 3.0",
   },
   {
@@ -189,6 +194,7 @@ export const catalog: Title[] = [
     image: "/media/sintel.jpg",
     color: "#b6b8d3",
     video: "/media/sintel-trailer.mp4",
+    videoWebm: "/media/sintel-trailer.webm",
     demoCredit,
   },
 ];
