@@ -5,3 +5,5 @@ test-results/
 .superpowers/
 .env*
 !.env.example
+
+dist-pages/

@@ -10,7 +10,9 @@
     "test": "vitest run",
     "test:browser": "playwright test",
     "start": "node server/index.ts",
-    "test:production": "TEST_PRODUCTION=1 playwright test"
+    "test:production": "TEST_PRODUCTION=1 playwright test",
+    "build:pages": "tsc --noEmit && vite build --mode pages",
+    "test:pages": "TEST_PAGES=1 playwright test"
   },
   "dependencies": {
     "react": "^19.2.0",

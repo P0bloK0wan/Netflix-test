@@ -35,7 +35,7 @@ npm start                   # site compilado + API, porta 3000
 curl 'http://localhost:3000/api/v1/catalog?q=orbita'
 ```
 
-A produção exige o servidor Node; copiar apenas `dist/` para hospedagem estática não fornece a API. Distribuir `dist/`, `server/`, `src/data/`, `src/domain/`, package.json/lock e instalar dependências de produção (ou usar o checkout completo). O servidor usa `serve-static`/`send` para arquivos públicos, tipos MIME e requisições Range de vídeo. HTTPS deve ser terminado pelo host/proxy escolhido. Nenhuma publicação em domínio foi feita nesta etapa.
+A produção exige o servidor Node; copiar apenas `dist/` para hospedagem estática não fornece a API. Distribuir `dist/`, `server/`, `src/data/`, `src/domain/`, package.json/lock e instalar dependências de produção (ou usar o checkout completo). O servidor usa `serve-static`/`send` para arquivos públicos, tipos MIME e requisições Range de vídeo. HTTPS deve ser terminado pelo host/proxy escolhido. Essa configuração é distinta da versão estática publicada no GitHub Pages.
 
 ## Limites e evolução para Android
 
@@ -48,3 +48,9 @@ Para virar um serviço com contas: adicionar autenticação verificada no servid
 `npm test` cobre contrato HTTP real, filtros, paginação, métodos, validação do cliente e armazenamento. `npm run test:browser` testa desenvolvimento; `npm run test:production` usa o servidor Node e os arquivos compilados. CI executa os três além do build. Os testes de falhas simulam HTTP 503, payload vazio e requisição que não responde, e confirmam recuperação sem tela em branco. Essa cobertura reduz regressões; não garante ausência de qualquer erro futuro.
 
 A publicação deve usar uma pasta de release completa e reiniciar o processo, evitando reconstruir `dist/` enquanto ele é servido. Arquivos ausentes geram erro HTTP tratado; um teste remove um arquivo já servido e confirma que a API continua disponível.
+
+## GitHub Pages
+
+`npm run build:pages` gera `dist-pages/` com base `/Netflix-test/`, arquivos compilados e `catalog.json` derivado do mesmo catálogo/perfis da API. O cliente desse build lê o JSON por HTTP; a busca ocorre no navegador e lista/progresso continuam locais. Não existe backend Node no Pages. O modo padrão continua consumindo `/api/v1/bootstrap`, sem fallback silencioso para dados estáticos.
+
+A configuração do repositório deve usar **GitHub Actions** como fonte do Pages. O workflow verifica o build estático com `npm run test:pages`, envia apenas `dist-pages/` e publica depois de todas as verificações. Publicar a raiz da branch diretamente serve TSX não compilado e causa tela branca.

@@ -60,7 +60,11 @@ Uma futura aplicação Android poderá consumir os contratos da API já implemen
 
 ## Publicação
 
-Execute `npm run build` e `npm start` em um host com Node 24+. O servidor entrega o site e a API na mesma origem; hospedagem apenas estática de `dist/` não é suficiente. A demo não exige chaves externas. `PORT` e `HOST` são opcionais. Veja [instruções de produção](docs/api.md).
+Site público: https://p0blok0wan.github.io/Netflix-test/
+
+O GitHub Pages usa `npm run build:pages`: publica somente `dist-pages/`, com caminhos em `/Netflix-test/` e catálogo JSON gerado no build. A publicação via GitHub Actions ocorre após os testes, incluindo testes em servidor puramente estático. O Pages não executa a API Node; busca, lista local e trailers continuam funcionando com o mesmo catálogo da demonstração.
+
+Para hospedar também a API própria, execute `npm run build` e `npm start` em um host com Node 24+. `PORT` e `HOST` são opcionais. Veja [instruções de produção](docs/api.md).
 
 Projeto independente, sem vínculo com a Netflix.
 
@@ -72,7 +76,7 @@ O workflow `.github/workflows/ci.yml` executa testes de domínio, validação da
 
 ## API e pesquisa de motion
 
-O site agora recebe catálogo/perfis da [API própria](docs/api.md), disponível em desenvolvimento e com `npm run build && npm start` em produção (Node 24+). É preciso executar o servidor, não apenas hospedar `dist/`. Listas/progresso permanecem locais.
+O site agora recebe catálogo/perfis da [API própria](docs/api.md), disponível em desenvolvimento e com `npm run build && npm start` em produção (Node 24+). Nesse modo é preciso executar o servidor, não apenas hospedar `dist/`. A versão GitHub Pages usa o build estático específico descrito acima. Listas/progresso permanecem locais.
 
 [Pesquisa com fontes reais](docs/motion-research.md): 72 recursos de animação inventariados no APK (57 XML + 15 Lottie), página pública medida e referências dos estúdios responsáveis pela marca. [67 animações próprias do site](docs/animations.md), com movimento reduzido e confirmação SVG. As contagens do APK, marca e website não são intercambiáveis.
 

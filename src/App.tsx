@@ -1,4 +1,5 @@
 import { useMemo, useState } from "react";
+import { assetUrl } from "./assetUrl";
 import { useReveal, scrollBehavior } from "./useReveal";
 import { filterTitles } from "./domain/catalog";
 import { browserStorage, createLibrary } from "./domain/storage";
@@ -197,7 +198,7 @@ export default function App({ catalog, profiles }: { catalog: Title[]; profiles:
                 ranked
               />
               <section className="discovery-banner" data-reveal>
-                <img src="/media/ocean.jpg" alt="" loading="lazy" />
+                <img src={assetUrl("/media/ocean.jpg")} alt="" loading="lazy" />
                 <div>
                   <span className="eyebrow">MUDE DE PERSPECTIVA</span>
                   <h2>

@@ -1,4 +1,5 @@
 import type { Title, Profile } from "./domain/types";
+import { assetUrl } from "./assetUrl";
 export interface Bootstrap { titles: Title[]; profiles: Profile[] }
 const object = (value: unknown): value is Record<string, unknown> =>
   typeof value === "object" && value !== null && !Array.isArray(value);
@@ -29,7 +30,14 @@ export function parseBootstrap(value: unknown): Bootstrap {
   return { titles, profiles };
 }
 export async function fetchBootstrap(signal: AbortSignal): Promise<Bootstrap> {
-  const response = await fetch("/api/v1/bootstrap", { signal, headers: { Accept: "application/json" } });
+  const endpoint = import.meta.env.MODE === "pages" ? "catalog.json" : "api/v1/bootstrap";
+  const response = await fetch(assetUrl(endpoint), { signal, headers: { Accept: "application/json" } });
   if (!response.ok) throw new Error("Não foi possível carregar o catálogo.");
-  return parseBootstrap(await response.json());
+  const data = parseBootstrap(await response.json());
+  return { ...data, titles: data.titles.map(title => ({
+    ...title,
+    image: assetUrl(title.image),
+    video: assetUrl(title.video),
+    videoWebm: title.videoWebm ? assetUrl(title.videoWebm) : undefined,
+  })) };
 }

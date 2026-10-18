@@ -37,3 +37,10 @@ Spec approved by user. Execution proceeds inline under that authorization.
 - Um build iniciou enquanto uma suíte de produção anterior ainda rodava: o Vite removeu `dist/` e expôs leitura sem tratamento de erro no servidor estático sirv. A suíte afetada terminou com 11 passados/2 falhas por servidor indisponível. Corrigido substituindo a camada estática por serve-static/send com callback de erro; regressão remove arquivo já servido e verifica 404 + API ainda disponível. Builds e verificações finais foram executados em sequência. A publicação deve trocar releases completas, sem reconstruir a pasta ativa.
 - Testes adicionados para contratos HTTP, consulta inválida, URL malformada, payload incompatível, 503/retry, timeout, dados do destaque vindos da API, Range de vídeo, arquivos ausentes e movimento reduzido. CI passa a executar o site tanto via Vite quanto via servidor de produção.
 - Verificação final local: 19 testes de unidade/API + build + 13 testes Chromium no servidor de produção aprovados. Fluxos Vite também passaram (suíte de 13 e repetição dos 8 casos afetados após ajustes). Conferidas prévias desktop 1440 px e móvel 390 px sem overflow horizontal. Revisão independente adicional aprovou a troca do servidor estático e verificou Range, HEAD, 404 e continuidade da API.
+
+## Correção da tela branca no GitHub Pages
+
+- Reproduzido no endereço informado pelo usuário: HTML HTTP 200, corpo vazio e script `/src/main.tsx` HTTP 404. Pages estava em modo legacy, publicando a raiz da main sem build.
+- Teste de regressão em servidor puramente estático sob `/Netflix-test/` falhou antes da correção, mesmo com JS compilado, pois o catálogo ainda dependia da API Node ausente.
+- Build `pages` passa a gerar catálogo JSON e ajustar caminhos de JS/CSS, imagens, fontes e vídeos ao subdiretório. A configuração padrão mantém a API Node.
+- Workflow publica somente o build após verificações de API, produção e hospedagem estática. Novos testes verificam carregamento sem erros, fontes/imagens, busca, persistência de lista, vídeo real, retry e layout móvel.
