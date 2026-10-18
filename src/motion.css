@@ -1,4 +1,4 @@
-/* 64 finite, contextual effects. See docs/animations.md. */
+/* Original adaptations, not extracted Netflix CSS. See docs/motion-research.md. */
 
 @keyframes header-enter {
   from {
@@ -677,268 +677,268 @@
 
 @media (prefers-reduced-motion: no-preference) {
   .header {
-    animation: header-enter 500ms cubic-bezier(0.2, 0.7, 0.2, 1) 0ms 1 both;
+    animation: header-enter 500ms var(--motion-reveal) 0ms 1 both;
   }
 
   .brand:hover {
-    animation: brand-lift 250ms cubic-bezier(0.2, 0.7, 0.2, 1) 0ms 1 both;
+    animation: brand-lift 250ms var(--motion-reveal) 0ms 1 both;
   }
 
   .brand:hover .demo-mark {
-    animation: brand-badge 250ms cubic-bezier(0.2, 0.7, 0.2, 1) 0ms 1 both;
+    animation: brand-badge 250ms var(--motion-reveal) 0ms 1 both;
   }
 
   .nav-link:hover {
-    animation: nav-hover 220ms cubic-bezier(0.2, 0.7, 0.2, 1) 0ms 1 both;
+    animation: nav-hover 220ms var(--motion-reveal) 0ms 1 both;
   }
 
   .nav-link.active::after {
     transform-origin: left;
-    animation: nav-indicator 280ms cubic-bezier(0.2, 0.7, 0.2, 1) 0ms 1 both;
+    animation: nav-indicator 280ms var(--motion-reveal) 0ms 1 both;
   }
 
   button[aria-label="Buscar títulos"]:hover svg {
-    animation: search-icon 300ms cubic-bezier(0.2, 0.7, 0.2, 1) 0ms 1 both;
+    animation: search-icon 300ms var(--motion-reveal) 0ms 1 both;
   }
 
   .search-control.expanded {
-    animation: search-expand 250ms cubic-bezier(0.2, 0.7, 0.2, 1) 0ms 1 both;
+    animation: search-expand 250ms var(--motion-reveal) 0ms 1 both;
   }
 
   button[aria-label="Fechar busca"]:hover svg {
-    animation: search-clear 250ms cubic-bezier(0.2, 0.7, 0.2, 1) 0ms 1 both;
+    animation: search-clear 250ms var(--motion-reveal) 0ms 1 both;
   }
 
   .profile-trigger:hover {
-    animation: profile-trigger 250ms cubic-bezier(0.2, 0.7, 0.2, 1) 0ms 1 both;
+    animation: profile-trigger 250ms var(--motion-reveal) 0ms 1 both;
   }
 
   .profile-trigger:hover .avatar i,
   .profile-options button:hover .avatar i {
-    animation: avatar-eyes 350ms cubic-bezier(0.2, 0.7, 0.2, 1) 0ms 1 both;
+    animation: avatar-eyes 350ms var(--motion-reveal) 0ms 1 both;
   }
 
   .profile-trigger:hover .avatar b,
   .profile-options button:hover .avatar b {
-    animation: avatar-smile 400ms cubic-bezier(0.2, 0.7, 0.2, 1) 0ms 1 both;
+    animation: avatar-smile 400ms var(--motion-reveal) 0ms 1 both;
   }
 
   .profile-trigger:hover .down-caret {
-    animation: profile-caret 300ms cubic-bezier(0.2, 0.7, 0.2, 1) 0ms 1 both;
+    animation: profile-caret 300ms var(--motion-reveal) 0ms 1 both;
   }
 
   .hero-image {
-    animation: hero-landscape 1600ms cubic-bezier(0.2, 0.7, 0.2, 1) 0ms 1 both;
+    animation: hero-landscape 1600ms var(--motion-reveal) 0ms 1 both;
   }
 
   .hero-kicker {
-    animation: hero-kicker 450ms cubic-bezier(0.2, 0.7, 0.2, 1) 80ms 1 both;
+    animation: hero-kicker 450ms var(--motion-reveal) 80ms 1 both;
   }
 
   .netflix-n {
-    animation: hero-monogram 500ms cubic-bezier(0.2, 0.7, 0.2, 1) 100ms 1 both;
+    animation: hero-monogram 500ms var(--motion-reveal) 100ms 1 both;
   }
 
   .hero-eyebrow {
-    animation: hero-eyebrow 450ms cubic-bezier(0.2, 0.7, 0.2, 1) 120ms 1 both;
+    animation: hero-eyebrow 450ms var(--motion-reveal) 120ms 1 both;
   }
 
   .hero h1 {
-    animation: hero-title 650ms cubic-bezier(0.2, 0.7, 0.2, 1) 160ms 1 both;
+    animation: hero-title 650ms var(--motion-reveal) 160ms 1 both;
   }
 
   .hero h1 span {
-    animation: hero-subtitle 650ms cubic-bezier(0.2, 0.7, 0.2, 1) 220ms 1 both;
+    animation: hero-subtitle 650ms var(--motion-reveal) 220ms 1 both;
   }
 
   .hero-meta {
-    animation: hero-meta 400ms cubic-bezier(0.2, 0.7, 0.2, 1) 280ms 1 both;
+    animation: hero-meta 400ms var(--motion-reveal) 280ms 1 both;
   }
 
   .feature-badge {
-    animation: hero-badge 350ms cubic-bezier(0.2, 0.7, 0.2, 1) 340ms 1 both;
+    animation: hero-badge 350ms var(--motion-reveal) 340ms 1 both;
   }
 
   .hero-description {
-    animation: hero-description 450ms cubic-bezier(0.2, 0.7, 0.2, 1) 330ms 1
+    animation: hero-description 450ms var(--motion-reveal) 330ms 1
       both;
   }
 
   .hero .button.primary {
-    animation: hero-play 380ms cubic-bezier(0.2, 0.7, 0.2, 1) 380ms 1 both;
+    animation: hero-play 380ms var(--motion-reveal) 380ms 1 both;
   }
 
   .button.primary:hover svg {
-    animation: play-arrow 250ms cubic-bezier(0.2, 0.7, 0.2, 1) 0ms 1 both;
+    animation: play-arrow 250ms var(--motion-reveal) 0ms 1 both;
   }
 
   .hero .button.secondary {
-    animation: hero-info 380ms cubic-bezier(0.2, 0.7, 0.2, 1) 440ms 1 both;
+    animation: hero-info 380ms var(--motion-reveal) 440ms 1 both;
   }
 
   .button.secondary:hover svg {
-    animation: info-ring 350ms cubic-bezier(0.2, 0.7, 0.2, 1) 0ms 1 both;
+    animation: info-ring 350ms var(--motion-reveal) 0ms 1 both;
   }
 
   .hero-demo {
-    animation: hero-caption 450ms cubic-bezier(0.2, 0.7, 0.2, 1) 520ms 1 both;
+    animation: hero-caption 450ms var(--motion-reveal) 520ms 1 both;
   }
 
   .hero-page {
-    animation: hero-pagination 400ms cubic-bezier(0.2, 0.7, 0.2, 1) 400ms 1 both;
+    animation: hero-pagination 400ms var(--motion-reveal) 400ms 1 both;
   }
 
   .age-rating {
-    animation: hero-age 400ms cubic-bezier(0.2, 0.7, 0.2, 1) 400ms 1 both;
+    animation: hero-age 400ms var(--motion-reveal) 400ms 1 both;
   }
 
   [data-reveal][data-visible="true"] .section-heading h2 {
-    animation: section-title 430ms cubic-bezier(0.2, 0.7, 0.2, 1) 0ms 1 both;
+    animation: section-title 430ms var(--motion-reveal) 0ms 1 both;
   }
 
   [data-reveal][data-visible="true"] .section-heading p {
-    animation: section-caption 400ms cubic-bezier(0.2, 0.7, 0.2, 1) 70ms 1 both;
+    animation: section-caption 400ms var(--motion-reveal) 70ms 1 both;
   }
 
   .section-heading:hover .heading-dot {
-    animation: section-dot 400ms cubic-bezier(0.2, 0.7, 0.2, 1) 0ms 1 both;
+    animation: section-dot 400ms var(--motion-reveal) 0ms 1 both;
   }
 
   .row-controls button:first-child:hover {
-    animation: row-previous 250ms cubic-bezier(0.2, 0.7, 0.2, 1) 0ms 1 both;
+    animation: row-previous 250ms var(--motion-reveal) 0ms 1 both;
   }
 
   .row-controls button:last-child:hover {
-    animation: row-next 250ms cubic-bezier(0.2, 0.7, 0.2, 1) 0ms 1 both;
+    animation: row-next 250ms var(--motion-reveal) 0ms 1 both;
   }
 
   [data-reveal][data-visible="true"] .card-wrap,
   .catalog-grid .card-wrap {
-    animation: card-enter 450ms cubic-bezier(0.2, 0.7, 0.2, 1)
+    animation: card-enter 450ms var(--motion-reveal)
       var(--card-delay, 0ms) 1 both;
   }
 
   .title-card:is(:hover, :focus-visible) img {
-    animation: card-image 500ms cubic-bezier(0.2, 0.7, 0.2, 1) 0ms 1 both;
+    animation: card-image 500ms var(--motion-reveal) 0ms 1 both;
   }
 
   .title-card:is(:hover, :focus-visible) .card-brand {
-    animation: card-mark 350ms cubic-bezier(0.2, 0.7, 0.2, 1) 0ms 1 both;
+    animation: card-mark 350ms var(--motion-reveal) 0ms 1 both;
   }
 
   .title-card:is(:hover, :focus-visible) .card-type {
-    animation: card-label 300ms cubic-bezier(0.2, 0.7, 0.2, 1) 0ms 1 both;
+    animation: card-label 300ms var(--motion-reveal) 0ms 1 both;
   }
 
   .title-card:is(:hover, :focus-visible) .card-title {
-    animation: card-title 300ms cubic-bezier(0.2, 0.7, 0.2, 1) 0ms 1 both;
+    animation: card-title 300ms var(--motion-reveal) 0ms 1 both;
   }
 
   .title-card:is(:hover, :focus-visible) .card-meta {
-    animation: card-meta 350ms cubic-bezier(0.2, 0.7, 0.2, 1) 60ms 1 both;
+    animation: card-meta 350ms var(--motion-reveal) 60ms 1 both;
   }
 
   .progress-track > span {
     transform-origin: left;
-    animation: card-progress 500ms cubic-bezier(0.2, 0.7, 0.2, 1) 0ms 1 both;
+    animation: card-progress 500ms var(--motion-reveal) 0ms 1 both;
   }
 
   [data-reveal][data-visible="true"] .rank-number {
-    animation: card-rank 500ms cubic-bezier(0.2, 0.7, 0.2, 1) 60ms 1 both;
+    animation: card-rank 500ms var(--motion-reveal) 60ms 1 both;
   }
 
   .card-wrap:is(:hover, :focus-within) .card-quick-actions {
-    animation: quick-panel 240ms cubic-bezier(0.2, 0.7, 0.2, 1) 0ms 1 both;
+    animation: quick-panel 240ms var(--motion-reveal) 0ms 1 both;
   }
 
   .quick-play:hover svg {
-    animation: quick-play 240ms cubic-bezier(0.2, 0.7, 0.2, 1) 0ms 1 both;
+    animation: quick-play 240ms var(--motion-reveal) 0ms 1 both;
   }
 
   .quick-save:hover svg {
-    animation: quick-save 240ms cubic-bezier(0.2, 0.7, 0.2, 1) 0ms 1 both;
+    animation: quick-save 240ms var(--motion-reveal) 0ms 1 both;
   }
 
   .discovery-banner[data-visible="true"] img {
-    animation: banner-image 1200ms cubic-bezier(0.2, 0.7, 0.2, 1) 0ms 1 both;
+    animation: banner-image 1200ms var(--motion-reveal) 0ms 1 both;
   }
 
   .discovery-banner[data-visible="true"] .eyebrow {
-    animation: banner-eyebrow 450ms cubic-bezier(0.2, 0.7, 0.2, 1) 0ms 1 both;
+    animation: banner-eyebrow 450ms var(--motion-reveal) 0ms 1 both;
   }
 
   .discovery-banner[data-visible="true"] h2 {
-    animation: banner-title 550ms cubic-bezier(0.2, 0.7, 0.2, 1) 80ms 1 both;
+    animation: banner-title 550ms var(--motion-reveal) 80ms 1 both;
   }
 
   .discovery-banner[data-visible="true"] p {
-    animation: banner-copy 450ms cubic-bezier(0.2, 0.7, 0.2, 1) 140ms 1 both;
+    animation: banner-copy 450ms var(--motion-reveal) 140ms 1 both;
   }
 
   .discovery-banner .button:hover svg {
-    animation: banner-arrow 300ms cubic-bezier(0.2, 0.7, 0.2, 1) 0ms 1 both;
+    animation: banner-arrow 300ms var(--motion-reveal) 0ms 1 both;
   }
 
   .discovery-banner[data-visible="true"] .banner-index {
-    animation: banner-index 450ms cubic-bezier(0.2, 0.7, 0.2, 1) 150ms 1 both;
+    animation: banner-index 450ms var(--motion-reveal) 150ms 1 both;
   }
 
   .browse-heading {
-    animation: browse-title 350ms cubic-bezier(0.2, 0.7, 0.2, 1) 0ms 1 both;
+    animation: browse-title 350ms var(--motion-reveal) 0ms 1 both;
   }
 
   .empty-icon {
-    animation: empty-icon 400ms cubic-bezier(0.2, 0.7, 0.2, 1) 0ms 1 both;
+    animation: empty-icon 400ms var(--motion-reveal) 0ms 1 both;
   }
 
   .empty-state h2 {
-    animation: empty-title 400ms cubic-bezier(0.2, 0.7, 0.2, 1) 60ms 1 both;
+    animation: empty-title 400ms var(--motion-reveal) 60ms 1 both;
   }
 
   .empty-state .button {
-    animation: empty-action 350ms cubic-bezier(0.2, 0.7, 0.2, 1) 100ms 1 both;
+    animation: empty-action 350ms var(--motion-reveal) 100ms 1 both;
   }
 
   dialog[open]::backdrop {
-    animation: dialog-backdrop 200ms cubic-bezier(0.2, 0.7, 0.2, 1) 0ms 1 both;
+    animation: dialog-backdrop 200ms var(--motion-reveal) 0ms 1 both;
   }
 
   .details-dialog[open] {
-    animation: detail-open 280ms cubic-bezier(0.2, 0.7, 0.2, 1) 0ms 1 both;
+    animation: detail-open 280ms var(--motion-reveal) 0ms 1 both;
   }
 
   .details-dialog[open] .detail-heading {
-    animation: detail-title 350ms cubic-bezier(0.2, 0.7, 0.2, 1) 50ms 1 both;
+    animation: detail-title 350ms var(--motion-reveal) 50ms 1 both;
   }
 
   .details-dialog[open] .detail-body {
-    animation: detail-copy 350ms cubic-bezier(0.2, 0.7, 0.2, 1) 90ms 1 both;
+    animation: detail-copy 350ms var(--motion-reveal) 90ms 1 both;
   }
 
   .round-button.selected svg,
   .quick-save[aria-pressed="true"] svg {
-    animation: list-confirm 350ms cubic-bezier(0.2, 0.7, 0.2, 1) 0ms 1 both;
+    animation: list-confirm 350ms var(--motion-reveal) 0ms 1 both;
   }
 
   .profiles-dialog[open] {
-    animation: profiles-open 280ms cubic-bezier(0.2, 0.7, 0.2, 1) 0ms 1 both;
+    animation: profiles-open 280ms var(--motion-reveal) 0ms 1 both;
   }
 
   .profile-options button {
-    animation: profile-option 350ms cubic-bezier(0.2, 0.7, 0.2, 1)
+    animation: profile-option 350ms var(--motion-reveal)
       var(--profile-delay, 0ms) 1 both;
   }
 
   .player-dialog[open] {
-    animation: player-open 230ms cubic-bezier(0.2, 0.7, 0.2, 1) 0ms 1 both;
+    animation: player-open 230ms var(--motion-reveal) 0ms 1 both;
   }
 
   .video-error {
-    animation: player-error 250ms cubic-bezier(0.2, 0.7, 0.2, 1) 0ms 1 both;
+    animation: player-error 250ms var(--motion-reveal) 0ms 1 both;
   }
 
   footer[data-visible="true"] .footer-top {
-    animation: footer-enter 450ms cubic-bezier(0.2, 0.7, 0.2, 1) 0ms 1 both;
+    animation: footer-enter 450ms var(--motion-reveal) 0ms 1 both;
   }
 }
 
@@ -950,4 +950,49 @@
     transition: none !important;
     scroll-behavior: auto !important;
   }
+}
+
+/* Sources and the distinction between measurements/adaptations are in motion-research.md. */
+:root {
+  --motion-reveal: cubic-bezier(0.33, 0, 0, 1);
+  --motion-feedback: cubic-bezier(0.4, 0, 0.68, 0.06);
+  --motion-list-duration: 517ms;
+}
+.catalog-status { min-height: 100svh; display: grid; place-content: center; text-align: center; padding: 32px; gap: 36px; background: #080808; }
+.catalog-status h1 { font-size: clamp(1.3rem, 3vw, 2rem); max-width: 650px; }
+.catalog-status p { color: #b6b6b6; margin: 20px 0; }
+.catalog-status .button { margin: 20px auto; }
+.loading-streams { display: flex; justify-content: center; align-items: center; gap: 5px; height: 60px; margin-bottom: 28px; }
+.loading-streams i { display: block; width: 5px; height: 38px; background: #e50914; transform-origin: center; }
+.loading-streams i:nth-child(2) { background: #f34450; height: 52px; }
+.loading-streams i:nth-child(3) { background: #ad0610; }
+.hero-stream { position: absolute; left: 2%; top: 29%; height: 45%; width: 3px; background: linear-gradient(#6a0511, #e50914, #ff9276); pointer-events: none; opacity: 0; transform-origin: top; }
+.list-mark-plus { opacity: 1; transform-origin: center; }
+.list-mark-check { stroke-dasharray: 1; stroke-dashoffset: 1; opacity: 0; }
+.list-mark[data-saved="true"] .list-mark-plus { opacity: 0; transform: rotate(90deg) scale(.6); }
+.list-mark[data-saved="true"] .list-mark-check { stroke-dashoffset: 0; opacity: 1; }
+@keyframes stream-travel {
+  0% { transform: translateY(-30%) scaleY(.05); opacity: 0; }
+  25% { transform: translateY(0) scaleY(1); opacity: .9; }
+  70% { transform: translateY(0) scaleY(1); opacity: .6; }
+  100% { transform: translateY(25%) scaleY(.05); opacity: 0; }
+}
+@keyframes stream-loading {
+  0%, 100% { transform: scaleY(.6); opacity: .5; }
+  50% { transform: scaleY(1); opacity: 1; }
+}
+@keyframes title-stream-reveal {
+  from { clip-path: inset(0 100% 0 0); }
+  to { clip-path: inset(0 0 0 0); }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .hero-stream { animation: stream-travel 1200ms var(--motion-reveal) 1 both; }
+  .loading-streams i { animation: stream-loading 1000ms ease-in-out 3; }
+  .loading-streams i:nth-child(2) { animation-delay: 120ms; }
+  .loading-streams i:nth-child(3) { animation-delay: 240ms; }
+  .detail-heading h2 { animation: title-stream-reveal 400ms var(--motion-reveal) 1 both; }
+  .list-mark-plus { transition: opacity 180ms ease, transform var(--motion-list-duration) var(--motion-reveal); }
+  .list-mark-check { transition: stroke-dashoffset var(--motion-list-duration) var(--motion-reveal), opacity 160ms ease; }
+  .button, .round-button, .quick-save, .quick-play { transition: background-color 250ms var(--motion-feedback), border-color 250ms var(--motion-feedback); }
+  .title-card { transition: transform 200ms ease-in-out, box-shadow 200ms ease-in-out; }
 }

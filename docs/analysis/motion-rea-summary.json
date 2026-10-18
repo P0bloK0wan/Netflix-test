@@ -1,0 +1,34 @@
+{
+  "evidence_id": "ev_74acc101392d6eb198928917cfe2e1e036f2a5faf8dd4c27f986c4c44826c626",
+  "subject": {
+    "name": "Netflix.apk",
+    "digest": {
+      "sha256": "b82d572c0b0b1f9f42ef0ab7f1afdee4465b9e88c00b30b6db79b671d4ca6b60"
+    },
+    "local_path": "/workspace/Netflix.apk",
+    "format": "apk",
+    "architecture": null
+  },
+  "provider": {
+    "id": "apktool",
+    "name": "Apktool",
+    "version": "3.0.3"
+  },
+  "operation": "decode_android_resources",
+  "confidence": "observed",
+  "authority": "shipped-artifact",
+  "limitations": [
+    "Decoding skips smali (--no-src); Java-source recovery belongs to the JADX family"
+  ],
+  "normalized_result": {
+    "metadata": {
+      "version_name": "9.87.1 build 9 74701",
+      "version_code": "74701",
+      "min_sdk_version": "28",
+      "target_sdk_version": "37",
+      "package_name": "com.netflix.mediaclient"
+    },
+    "decoded_file_count": 7089,
+    "coverage": "complete"
+  }
+}

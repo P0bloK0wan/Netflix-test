@@ -1,6 +1,7 @@
 import type { Title } from "../domain/types";
 import { Dialog } from "./Dialog";
 import { Icon } from "./Icon";
+import { ListMark } from "./ListMark";
 export function Details({
   title,
   inList,
@@ -50,8 +51,9 @@ export function Details({
                 inList ? "Remover da Minha Lista" : "Adicionar à Minha Lista"
               }
               onClick={onToggle}
+              aria-pressed={inList}
             >
-              <Icon name={inList ? "check" : "plus"} />
+              <ListMark saved={inList} />
             </button>
           </div>
         </div>

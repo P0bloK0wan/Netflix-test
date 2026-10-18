@@ -1,0 +1,1391 @@
+{
+  "apkSha256": "b82d572c0b0b1f9f42ef0ab7f1afdee4465b9e88c00b30b6db79b671d4ca6b60",
+  "apktoolVersion": "3.0.3",
+  "count": 72,
+  "excluded": [
+    {
+      "path": "res/anim/APKTOOL_RENAMED_0x7f010029.xml",
+      "reason": "interpolator-only or empty selector"
+    },
+    {
+      "path": "res/anim/APKTOOL_RENAMED_0x7f01003d.xml",
+      "reason": "interpolator-only or empty selector"
+    },
+    {
+      "path": "res/animator/APKTOOL_RENAMED_0x7f02001e.xml",
+      "reason": "interpolator-only or empty selector"
+    }
+  ],
+  "resources": [
+    {
+      "path": "res/anim/APKTOOL_RENAMED_0x7f010002.xml",
+      "format": "android-xml",
+      "sha256Decoded": "b7adecb90f93fdd994ce202a64cbf355ce2c9823efc9bedfa1fdde37283154a6",
+      "properties": [
+        "alpha",
+        "scale"
+      ],
+      "declaredDurationsMs": [
+        "150",
+        "220"
+      ],
+      "interpolators": [
+        "@android:anim/decelerate_interpolator"
+      ],
+      "repeatDeclared": false,
+      "attribution": "bundled resource; Netflix/library authorship and runtime usage unverified"
+    },
+    {
+      "path": "res/anim/APKTOOL_RENAMED_0x7f010003.xml",
+      "format": "android-xml",
+      "sha256Decoded": "41e180acd51febddb960a612cf92d5b3de9a293d8098d2c66b51734085ffcbae",
+      "properties": [
+        "alpha"
+      ],
+      "declaredDurationsMs": [
+        "150"
+      ],
+      "interpolators": [
+        "@android:anim/decelerate_interpolator"
+      ],
+      "repeatDeclared": false,
+      "attribution": "bundled resource; Netflix/library authorship and runtime usage unverified"
+    },
+    {
+      "path": "res/anim/APKTOOL_RENAMED_0x7f010004.xml",
+      "format": "android-xml",
+      "sha256Decoded": "b4a198f97f389dd363ddc5fe40e3bdaf77e631360fd51ed7dfb98b6cb0940ac0",
+      "properties": [
+        "alpha"
+      ],
+      "declaredDurationsMs": [
+        "150"
+      ],
+      "interpolators": [
+        "@android:anim/decelerate_interpolator"
+      ],
+      "repeatDeclared": false,
+      "attribution": "bundled resource; Netflix/library authorship and runtime usage unverified"
+    },
+    {
+      "path": "res/anim/APKTOOL_RENAMED_0x7f010005.xml",
+      "format": "android-xml",
+      "sha256Decoded": "1915cf909cfff2526c30515a757531bdae5562f5f2193ff8b61f403a1c33f01c",
+      "properties": [
+        "alpha",
+        "scale"
+      ],
+      "declaredDurationsMs": [
+        "150",
+        "220"
+      ],
+      "interpolators": [
+        "@android:anim/decelerate_interpolator"
+      ],
+      "repeatDeclared": false,
+      "attribution": "bundled resource; Netflix/library authorship and runtime usage unverified"
+    },
+    {
+      "path": "res/anim/APKTOOL_RENAMED_0x7f01000c.xml",
+      "format": "android-xml",
+      "sha256Decoded": "8eae3954d57fea8efdb0c9a25a9def159a836a5294a6772961d4718d83f681e9",
+      "properties": [
+        "alpha",
+        "scale"
+      ],
+      "declaredDurationsMs": [
+        "300"
+      ],
+      "interpolators": [],
+      "repeatDeclared": false,
+      "attribution": "bundled resource; Netflix/library authorship and runtime usage unverified"
+    },
+    {
+      "path": "res/anim/APKTOOL_RENAMED_0x7f01000d.xml",
+      "format": "android-xml",
+      "sha256Decoded": "aec33fbc299aed06e51c7279ea7f42fe05ccc1b1cbae2e9e6ac05e2d2f5c6ba7",
+      "properties": [
+        "alpha",
+        "scale"
+      ],
+      "declaredDurationsMs": [
+        "300"
+      ],
+      "interpolators": [],
+      "repeatDeclared": false,
+      "attribution": "bundled resource; Netflix/library authorship and runtime usage unverified"
+    },
+    {
+      "path": "res/anim/APKTOOL_RENAMED_0x7f01000e.xml",
+      "format": "android-xml",
+      "sha256Decoded": "30d8464346079d9ee3f660f4a185e54c8b6b42a6ed878cea016386d55011673f",
+      "properties": [
+        "translate"
+      ],
+      "declaredDurationsMs": [
+        "300"
+      ],
+      "interpolators": [],
+      "repeatDeclared": false,
+      "attribution": "bundled resource; Netflix/library authorship and runtime usage unverified"
+    },
+    {
+      "path": "res/anim/APKTOOL_RENAMED_0x7f01000f.xml",
+      "format": "android-xml",
+      "sha256Decoded": "7840fd99e7cee52f901e4af287c4eca1fe08959ff39c9f2dfffebe81fc942fb3",
+      "properties": [
+        "translate"
+      ],
+      "declaredDurationsMs": [
+        "300"
+      ],
+      "interpolators": [],
+      "repeatDeclared": false,
+      "attribution": "bundled resource; Netflix/library authorship and runtime usage unverified"
+    },
+    {
+      "path": "res/anim/APKTOOL_RENAMED_0x7f010010.xml",
+      "format": "android-xml",
+      "sha256Decoded": "c5e0e17f4840875ca16f9999cda34f29544e6fa250b52896738ac42a8327d680",
+      "properties": [
+        "translate"
+      ],
+      "declaredDurationsMs": [
+        "300"
+      ],
+      "interpolators": [],
+      "repeatDeclared": false,
+      "attribution": "bundled resource; Netflix/library authorship and runtime usage unverified"
+    },
+    {
+      "path": "res/anim/APKTOOL_RENAMED_0x7f010011.xml",
+      "format": "android-xml",
+      "sha256Decoded": "103557a5a00cc911869da9aa3b21cb17716ccec5549d769f78f2c0fda1b3d55f",
+      "properties": [
+        "alpha",
+        "translate"
+      ],
+      "declaredDurationsMs": [
+        "300"
+      ],
+      "interpolators": [],
+      "repeatDeclared": false,
+      "attribution": "bundled resource; Netflix/library authorship and runtime usage unverified"
+    },
+    {
+      "path": "res/anim/APKTOOL_RENAMED_0x7f010012.xml",
+      "format": "android-xml",
+      "sha256Decoded": "79b6252b220f10a1c50640f4ae43ceeb8ecc148c0e8f9548595fd7eda3892a34",
+      "properties": [
+        "alpha",
+        "translate"
+      ],
+      "declaredDurationsMs": [
+        "@android:integer/config_mediumAnimTime"
+      ],
+      "interpolators": [],
+      "repeatDeclared": false,
+      "attribution": "bundled resource; Netflix/library authorship and runtime usage unverified"
+    },
+    {
+      "path": "res/anim/APKTOOL_RENAMED_0x7f010013.xml",
+      "format": "android-xml",
+      "sha256Decoded": "6ce335b6de0a0502aec4194e3afa8f674633653f90d8e85021296270903c3e54",
+      "properties": [
+        "alpha",
+        "translate"
+      ],
+      "declaredDurationsMs": [
+        "@android:integer/config_mediumAnimTime"
+      ],
+      "interpolators": [],
+      "repeatDeclared": false,
+      "attribution": "bundled resource; Netflix/library authorship and runtime usage unverified"
+    },
+    {
+      "path": "res/anim/APKTOOL_RENAMED_0x7f010014.xml",
+      "format": "android-xml",
+      "sha256Decoded": "c3fe32f57a74e8ed2045b97316ac354a7356e39d3cf479636fa53b734f377401",
+      "properties": [
+        "alpha",
+        "translate"
+      ],
+      "declaredDurationsMs": [
+        "@android:integer/config_mediumAnimTime"
+      ],
+      "interpolators": [],
+      "repeatDeclared": false,
+      "attribution": "bundled resource; Netflix/library authorship and runtime usage unverified"
+    },
+    {
+      "path": "res/anim/APKTOOL_RENAMED_0x7f010015.xml",
+      "format": "android-xml",
+      "sha256Decoded": "b98552d94f39b2292151709e4de576f1fdb95b42c448bc9f06a5385a33c3793d",
+      "properties": [
+        "alpha",
+        "translate"
+      ],
+      "declaredDurationsMs": [
+        "@android:integer/config_mediumAnimTime"
+      ],
+      "interpolators": [],
+      "repeatDeclared": false,
+      "attribution": "bundled resource; Netflix/library authorship and runtime usage unverified"
+    },
+    {
+      "path": "res/anim/APKTOOL_RENAMED_0x7f010016.xml",
+      "format": "android-xml",
+      "sha256Decoded": "9a3e36a9e92f1382bee6cf30f0a4042e2a28e71a4cd9524be8887635bcf92e8d",
+      "properties": [
+        "fillAlpha",
+        "pathData"
+      ],
+      "declaredDurationsMs": [
+        "166",
+        "33"
+      ],
+      "interpolators": [
+        "@android:interpolator/linear",
+        "@interpolator/APKTOOL_RENAMED_0x7f0d0002",
+        "@interpolator/APKTOOL_RENAMED_0x7f0d0003"
+      ],
+      "repeatDeclared": false,
+      "attribution": "bundled resource; Netflix/library authorship and runtime usage unverified"
+    },
+    {
+      "path": "res/anim/APKTOOL_RENAMED_0x7f010017.xml",
+      "format": "android-xml",
+      "sha256Decoded": "bec61b4212b0daf4f91788e81233ecbc81a749818f89a676158915b7bd98f746",
+      "properties": [
+        "fillAlpha",
+        "pathData"
+      ],
+      "declaredDurationsMs": [
+        "166",
+        "200",
+        "300",
+        "33"
+      ],
+      "interpolators": [
+        "@android:interpolator/linear",
+        "@interpolator/APKTOOL_RENAMED_0x7f0d0002",
+        "@interpolator/APKTOOL_RENAMED_0x7f0d0003"
+      ],
+      "repeatDeclared": false,
+      "attribution": "bundled resource; Netflix/library authorship and runtime usage unverified"
+    },
+    {
+      "path": "res/anim/APKTOOL_RENAMED_0x7f010018.xml",
+      "format": "android-xml",
+      "sha256Decoded": "7c659ca8af7e1076cc08111444925fcd25ee6b522b60cf532023f0eca39b549a",
+      "properties": [
+        "scaleX",
+        "scaleY"
+      ],
+      "declaredDurationsMs": [
+        "200",
+        "300"
+      ],
+      "interpolators": [
+        "@interpolator/APKTOOL_RENAMED_0x7f0d0003"
+      ],
+      "repeatDeclared": false,
+      "attribution": "bundled resource; Netflix/library authorship and runtime usage unverified"
+    },
+    {
+      "path": "res/anim/APKTOOL_RENAMED_0x7f010019.xml",
+      "format": "android-xml",
+      "sha256Decoded": "8d8d4a5b2e043cae0e0fea5955c2758b6db2e71c670c00b6fd2dc48c5d9cebd2",
+      "properties": [
+        "fillAlpha",
+        "pathData"
+      ],
+      "declaredDurationsMs": [
+        "133",
+        "166",
+        "33",
+        "333"
+      ],
+      "interpolators": [
+        "@android:interpolator/linear",
+        "@interpolator/APKTOOL_RENAMED_0x7f0d0000",
+        "@interpolator/APKTOOL_RENAMED_0x7f0d0001"
+      ],
+      "repeatDeclared": false,
+      "attribution": "bundled resource; Netflix/library authorship and runtime usage unverified"
+    },
+    {
+      "path": "res/anim/APKTOOL_RENAMED_0x7f01001a.xml",
+      "format": "android-xml",
+      "sha256Decoded": "d26b05c4fb5edc82397b540b382631e81e39b0eeece833f29122d4de10774c4b",
+      "properties": [
+        "fillAlpha",
+        "pathData"
+      ],
+      "declaredDurationsMs": [
+        "133",
+        "166",
+        "33"
+      ],
+      "interpolators": [
+        "@android:interpolator/linear",
+        "@interpolator/APKTOOL_RENAMED_0x7f0d0000",
+        "@interpolator/APKTOOL_RENAMED_0x7f0d0001"
+      ],
+      "repeatDeclared": false,
+      "attribution": "bundled resource; Netflix/library authorship and runtime usage unverified"
+    },
+    {
+      "path": "res/anim/APKTOOL_RENAMED_0x7f01001b.xml",
+      "format": "android-xml",
+      "sha256Decoded": "4dabaa963940175d1cbf6df09b14232321fb692c2b0304f27aa8ac696bf0755b",
+      "properties": [
+        "scaleX",
+        "scaleY"
+      ],
+      "declaredDurationsMs": [
+        "166",
+        "333"
+      ],
+      "interpolators": [
+        "@interpolator/APKTOOL_RENAMED_0x7f0d0001"
+      ],
+      "repeatDeclared": false,
+      "attribution": "bundled resource; Netflix/library authorship and runtime usage unverified"
+    },
+    {
+      "path": "res/anim/APKTOOL_RENAMED_0x7f01001c.xml",
+      "format": "android-xml",
+      "sha256Decoded": "85aefdea4702e9e64c0929e24c7f2ca50dbd916d2b33113fb20c0c8f19f82b50",
+      "properties": [
+        "scaleX",
+        "scaleY"
+      ],
+      "declaredDurationsMs": [
+        "16",
+        "183",
+        "300"
+      ],
+      "interpolators": [
+        "@interpolator/APKTOOL_RENAMED_0x7f0d0006"
+      ],
+      "repeatDeclared": false,
+      "attribution": "bundled resource; Netflix/library authorship and runtime usage unverified"
+    },
+    {
+      "path": "res/anim/APKTOOL_RENAMED_0x7f01001d.xml",
+      "format": "android-xml",
+      "sha256Decoded": "9874817808c1618a58b06caf1d65f45c2f41e17ef8bdb921f36332b8253d2f37",
+      "properties": [
+        "scaleX",
+        "scaleY"
+      ],
+      "declaredDurationsMs": [
+        "16",
+        "183",
+        "300"
+      ],
+      "interpolators": [
+        "@interpolator/APKTOOL_RENAMED_0x7f0d0004",
+        "@interpolator/APKTOOL_RENAMED_0x7f0d0006"
+      ],
+      "repeatDeclared": false,
+      "attribution": "bundled resource; Netflix/library authorship and runtime usage unverified"
+    },
+    {
+      "path": "res/anim/APKTOOL_RENAMED_0x7f01001e.xml",
+      "format": "android-xml",
+      "sha256Decoded": "269314683ca0cc5bbf88fbb89f2356fc3e45719ca5c99fd80ed8439cb32a68a3",
+      "properties": [
+        "strokeWidth"
+      ],
+      "declaredDurationsMs": [
+        "16",
+        "183",
+        "300"
+      ],
+      "interpolators": [
+        "@interpolator/APKTOOL_RENAMED_0x7f0d0006"
+      ],
+      "repeatDeclared": false,
+      "attribution": "bundled resource; Netflix/library authorship and runtime usage unverified"
+    },
+    {
+      "path": "res/anim/APKTOOL_RENAMED_0x7f01001f.xml",
+      "format": "android-xml",
+      "sha256Decoded": "de93a1344a3dfc39155739cdacf4f0d5a93a8f606a8cc37c6b448a70fe2479b5",
+      "properties": [
+        "scaleX",
+        "scaleY"
+      ],
+      "declaredDurationsMs": [
+        "16",
+        "166",
+        "316"
+      ],
+      "interpolators": [
+        "@interpolator/APKTOOL_RENAMED_0x7f0d0006"
+      ],
+      "repeatDeclared": false,
+      "attribution": "bundled resource; Netflix/library authorship and runtime usage unverified"
+    },
+    {
+      "path": "res/anim/APKTOOL_RENAMED_0x7f010020.xml",
+      "format": "android-xml",
+      "sha256Decoded": "97737f4b740e8e238cbd02860bc03f370a94311a95a8dd72b8fab8c5e6ac4999",
+      "properties": [
+        "scaleX",
+        "scaleY"
+      ],
+      "declaredDurationsMs": [
+        "16",
+        "166",
+        "316"
+      ],
+      "interpolators": [
+        "@interpolator/APKTOOL_RENAMED_0x7f0d0006"
+      ],
+      "repeatDeclared": false,
+      "attribution": "bundled resource; Netflix/library authorship and runtime usage unverified"
+    },
+    {
+      "path": "res/anim/APKTOOL_RENAMED_0x7f010021.xml",
+      "format": "android-xml",
+      "sha256Decoded": "da82293f2eb27cf6dafa940e8a3ef6dd4cf8b2d488277282d67ac2d901bafeb5",
+      "properties": [
+        "strokeWidth"
+      ],
+      "declaredDurationsMs": [
+        "16",
+        "166",
+        "316"
+      ],
+      "interpolators": [
+        "@interpolator/APKTOOL_RENAMED_0x7f0d0005",
+        "@interpolator/APKTOOL_RENAMED_0x7f0d0006"
+      ],
+      "repeatDeclared": false,
+      "attribution": "bundled resource; Netflix/library authorship and runtime usage unverified"
+    },
+    {
+      "path": "res/anim/APKTOOL_RENAMED_0x7f010022.xml",
+      "format": "android-xml",
+      "sha256Decoded": "58ef2755a24e43009da07a3250e734ed61a79445ff3fc9ba5e068e357bf38ef4",
+      "properties": [
+        "alpha",
+        "translate"
+      ],
+      "declaredDurationsMs": [
+        "150"
+      ],
+      "interpolators": [
+        "@android:interpolator/fast_out_linear_in"
+      ],
+      "repeatDeclared": false,
+      "attribution": "bundled resource; Netflix/library authorship and runtime usage unverified"
+    },
+    {
+      "path": "res/anim/APKTOOL_RENAMED_0x7f010023.xml",
+      "format": "android-xml",
+      "sha256Decoded": "1cfbcb65ccdeb6a26cb203e8939bb52a8df263316906e23511af795fae92ee0b",
+      "properties": [
+        "alpha",
+        "translate"
+      ],
+      "declaredDurationsMs": [
+        "150"
+      ],
+      "interpolators": [
+        "@android:interpolator/fast_out_slow_in"
+      ],
+      "repeatDeclared": false,
+      "attribution": "bundled resource; Netflix/library authorship and runtime usage unverified"
+    },
+    {
+      "path": "res/anim/APKTOOL_RENAMED_0x7f010026.xml",
+      "format": "android-xml",
+      "sha256Decoded": "881efd9681455b359d79ac0099b42ec8a3dd5a5881628ed1111f410672191bf0",
+      "properties": [
+        "alpha",
+        "translate"
+      ],
+      "declaredDurationsMs": [
+        "300",
+        "500"
+      ],
+      "interpolators": [
+        "@android:anim/decelerate_interpolator"
+      ],
+      "repeatDeclared": false,
+      "attribution": "bundled resource; Netflix/library authorship and runtime usage unverified"
+    },
+    {
+      "path": "res/anim/APKTOOL_RENAMED_0x7f010027.xml",
+      "format": "android-xml",
+      "sha256Decoded": "d60543b3b308f20d9eb1765ef777ef4a26fdba5e88c112830ae6bdc32bfd8114",
+      "properties": [
+        "alpha"
+      ],
+      "declaredDurationsMs": [
+        "@android:integer/config_shortAnimTime"
+      ],
+      "interpolators": [],
+      "repeatDeclared": false,
+      "attribution": "bundled resource; Netflix/library authorship and runtime usage unverified"
+    },
+    {
+      "path": "res/anim/APKTOOL_RENAMED_0x7f010028.xml",
+      "format": "android-xml",
+      "sha256Decoded": "8ce8f0213e63f4555e8dbb1805388a171367fce061d6834eea5d5e82cc5f998c",
+      "properties": [
+        "alpha"
+      ],
+      "declaredDurationsMs": [
+        "@android:integer/config_shortAnimTime"
+      ],
+      "interpolators": [],
+      "repeatDeclared": false,
+      "attribution": "bundled resource; Netflix/library authorship and runtime usage unverified"
+    },
+    {
+      "path": "res/anim/APKTOOL_RENAMED_0x7f01002a.xml",
+      "format": "android-xml",
+      "sha256Decoded": "3774ccfccd2f15f436c7978a246ee84c0ae01810dcae7ccf2cf8100e1dae8a48",
+      "properties": [
+        "alpha",
+        "scale"
+      ],
+      "declaredDurationsMs": [
+        "100",
+        "200"
+      ],
+      "interpolators": [
+        "@android:anim/linear_interpolator"
+      ],
+      "repeatDeclared": false,
+      "attribution": "bundled resource; Netflix/library authorship and runtime usage unverified"
+    },
+    {
+      "path": "res/anim/APKTOOL_RENAMED_0x7f01002b.xml",
+      "format": "android-xml",
+      "sha256Decoded": "d8b5343cdbf9d3a468f10de194500f04a483306ecbe91343e35c9c8a070702b7",
+      "properties": [
+        "alpha",
+        "scale"
+      ],
+      "declaredDurationsMs": [
+        "100",
+        "200"
+      ],
+      "interpolators": [
+        "@android:anim/accelerate_interpolator",
+        "@android:anim/linear_interpolator"
+      ],
+      "repeatDeclared": false,
+      "attribution": "bundled resource; Netflix/library authorship and runtime usage unverified"
+    },
+    {
+      "path": "res/anim/APKTOOL_RENAMED_0x7f01002c.xml",
+      "format": "android-xml",
+      "sha256Decoded": "f5535f1dcdf44189769d54e0f941338af38a0be9fc9c1cf438c2ce05eb1dfe9d",
+      "properties": [
+        "alpha",
+        "scale"
+      ],
+      "declaredDurationsMs": [
+        "700"
+      ],
+      "interpolators": [
+        "@android:anim/linear_interpolator"
+      ],
+      "repeatDeclared": true,
+      "attribution": "bundled resource; Netflix/library authorship and runtime usage unverified"
+    },
+    {
+      "path": "res/anim/APKTOOL_RENAMED_0x7f01002d.xml",
+      "format": "android-xml",
+      "sha256Decoded": "335552121cabe13003309fc93e961bf526bc8b824dadb15fe03e4669c8a4fd92",
+      "properties": [
+        "alpha"
+      ],
+      "declaredDurationsMs": [
+        "600"
+      ],
+      "interpolators": [
+        "@android:anim/linear_interpolator"
+      ],
+      "repeatDeclared": true,
+      "attribution": "bundled resource; Netflix/library authorship and runtime usage unverified"
+    },
+    {
+      "path": "res/anim/APKTOOL_RENAMED_0x7f01002e.xml",
+      "format": "android-xml",
+      "sha256Decoded": "50b97b5f07e593871beb2be9a03fbef5dc3026e446cd56f38a461ad72ce07cef",
+      "properties": [
+        "alpha"
+      ],
+      "declaredDurationsMs": [
+        "600"
+      ],
+      "interpolators": [
+        "@android:anim/linear_interpolator"
+      ],
+      "repeatDeclared": true,
+      "attribution": "bundled resource; Netflix/library authorship and runtime usage unverified"
+    },
+    {
+      "path": "res/anim/APKTOOL_RENAMED_0x7f01003e.xml",
+      "format": "android-xml",
+      "sha256Decoded": "ccb2e0cfdb2fb4d925216ad0472ba0bfa93aead46eb30d34278dc53a5a1b3b91",
+      "properties": [
+        "fillAlpha"
+      ],
+      "declaredDurationsMs": [
+        "500"
+      ],
+      "interpolators": [],
+      "repeatDeclared": true,
+      "attribution": "bundled resource; Netflix/library authorship and runtime usage unverified"
+    },
+    {
+      "path": "res/anim/APKTOOL_RENAMED_0x7f01003f.xml",
+      "format": "android-xml",
+      "sha256Decoded": "0cee5f796c5022066b606484a17332074ae6832b06d6bb3d2c75265b08ad6e86",
+      "properties": [
+        "translate"
+      ],
+      "declaredDurationsMs": [
+        "200"
+      ],
+      "interpolators": [
+        "@android:anim/linear_interpolator"
+      ],
+      "repeatDeclared": false,
+      "attribution": "bundled resource; Netflix/library authorship and runtime usage unverified"
+    },
+    {
+      "path": "res/anim/APKTOOL_RENAMED_0x7f010040.xml",
+      "format": "android-xml",
+      "sha256Decoded": "023868e940ab6b5215f299cebb8d17c1474bfbe1b73f5d5c661fa079df569815",
+      "properties": [
+        "translate"
+      ],
+      "declaredDurationsMs": [
+        "300"
+      ],
+      "interpolators": [],
+      "repeatDeclared": false,
+      "attribution": "bundled resource; Netflix/library authorship and runtime usage unverified"
+    },
+    {
+      "path": "res/anim/APKTOOL_RENAMED_0x7f010041.xml",
+      "format": "android-xml",
+      "sha256Decoded": "db5fbb5d1ae3d6d4edcab03372668608f5a26dc5c91a35995a76e2cac844419e",
+      "properties": [
+        "translate"
+      ],
+      "declaredDurationsMs": [
+        "200"
+      ],
+      "interpolators": [
+        "@android:anim/linear_interpolator"
+      ],
+      "repeatDeclared": false,
+      "attribution": "bundled resource; Netflix/library authorship and runtime usage unverified"
+    },
+    {
+      "path": "res/anim/APKTOOL_RENAMED_0x7f010042.xml",
+      "format": "android-xml",
+      "sha256Decoded": "d7ab62e5ad710e5a3da10ab15bdb337cfbd2970d8e70db0e5c925b9abc197326",
+      "properties": [
+        "translate"
+      ],
+      "declaredDurationsMs": [
+        "300"
+      ],
+      "interpolators": [],
+      "repeatDeclared": false,
+      "attribution": "bundled resource; Netflix/library authorship and runtime usage unverified"
+    },
+    {
+      "path": "res/animator/APKTOOL_RENAMED_0x7f020000.xml",
+      "format": "android-xml",
+      "sha256Decoded": "b44b7184094d44976e67609936040dd290bdc1b273939213145c73ad0a470c16",
+      "properties": [
+        "scaleX",
+        "scaleY"
+      ],
+      "declaredDurationsMs": [
+        "300"
+      ],
+      "interpolators": [],
+      "repeatDeclared": false,
+      "attribution": "bundled resource; Netflix/library authorship and runtime usage unverified"
+    },
+    {
+      "path": "res/animator/APKTOOL_RENAMED_0x7f020001.xml",
+      "format": "android-xml",
+      "sha256Decoded": "d219015d3803d381ddd7807040dbbd4305b868e5c35cbc912720b7ea70f664f6",
+      "properties": [
+        "scaleX",
+        "scaleY"
+      ],
+      "declaredDurationsMs": [
+        "300"
+      ],
+      "interpolators": [],
+      "repeatDeclared": false,
+      "attribution": "bundled resource; Netflix/library authorship and runtime usage unverified"
+    },
+    {
+      "path": "res/animator/APKTOOL_RENAMED_0x7f020004.xml",
+      "format": "android-xml",
+      "sha256Decoded": "1ae86e318c1f0d0de63f0c284d74ced8bf15fa5e9c4554da5ce37de541813166",
+      "properties": [
+        "elevation"
+      ],
+      "declaredDurationsMs": [
+        "0",
+        "150"
+      ],
+      "interpolators": [],
+      "repeatDeclared": false,
+      "attribution": "bundled resource; Netflix/library authorship and runtime usage unverified"
+    },
+    {
+      "path": "res/animator/APKTOOL_RENAMED_0x7f020007.xml",
+      "format": "android-xml",
+      "sha256Decoded": "4b18148c85bc1f03b4b7b42ce85556a460973cabc78126cdcc978004aba45fed",
+      "properties": [
+        "alpha",
+        "scaleX",
+        "scaleY"
+      ],
+      "declaredDurationsMs": [
+        "300",
+        "50",
+        "66"
+      ],
+      "interpolators": [
+        "@android:anim/linear_interpolator",
+        "@anim/APKTOOL_RENAMED_0x7f010029"
+      ],
+      "repeatDeclared": false,
+      "attribution": "bundled resource; Netflix/library authorship and runtime usage unverified"
+    },
+    {
+      "path": "res/animator/APKTOOL_RENAMED_0x7f020008.xml",
+      "format": "android-xml",
+      "sha256Decoded": "2302a3190c1ce35ba3e46bec68fbaafdff48d37c1526cf9f470c91675d73c2fb",
+      "properties": [
+        "alpha",
+        "scaleX",
+        "scaleY"
+      ],
+      "declaredDurationsMs": [
+        "300",
+        "50",
+        "66"
+      ],
+      "interpolators": [
+        "@android:anim/linear_interpolator",
+        "@anim/APKTOOL_RENAMED_0x7f010029"
+      ],
+      "repeatDeclared": false,
+      "attribution": "bundled resource; Netflix/library authorship and runtime usage unverified"
+    },
+    {
+      "path": "res/animator/APKTOOL_RENAMED_0x7f020009.xml",
+      "format": "android-xml",
+      "sha256Decoded": "fb4e9be5dfb10f72f7ad696638ef444f0089f4cbf190edf0acb747c54a9af8f2",
+      "properties": [
+        "alpha"
+      ],
+      "declaredDurationsMs": [
+        "150"
+      ],
+      "interpolators": [
+        "@android:anim/linear_interpolator"
+      ],
+      "repeatDeclared": false,
+      "attribution": "bundled resource; Netflix/library authorship and runtime usage unverified"
+    },
+    {
+      "path": "res/animator/APKTOOL_RENAMED_0x7f02000a.xml",
+      "format": "android-xml",
+      "sha256Decoded": "9375c2d99e570a0de12b6705a5fd4322d2c1eadb9abfe1fed45fa87bec5cc611",
+      "properties": [
+        "alpha"
+      ],
+      "declaredDurationsMs": [
+        "150"
+      ],
+      "interpolators": [
+        "@android:anim/linear_interpolator"
+      ],
+      "repeatDeclared": false,
+      "attribution": "bundled resource; Netflix/library authorship and runtime usage unverified"
+    },
+    {
+      "path": "res/animator/APKTOOL_RENAMED_0x7f02000b.xml",
+      "format": "android-xml",
+      "sha256Decoded": "df2525fe675c37bf7f6076392ff3f2f9060e1744d19b3aefe81ab9df7c6ee187",
+      "properties": [
+        "alpha",
+        "scaleX",
+        "scaleY"
+      ],
+      "declaredDurationsMs": [
+        "300",
+        "50"
+      ],
+      "interpolators": [
+        "@android:anim/linear_interpolator",
+        "@anim/APKTOOL_RENAMED_0x7f010029"
+      ],
+      "repeatDeclared": false,
+      "attribution": "bundled resource; Netflix/library authorship and runtime usage unverified"
+    },
+    {
+      "path": "res/animator/APKTOOL_RENAMED_0x7f02000c.xml",
+      "format": "android-xml",
+      "sha256Decoded": "69e6d18755b0e6058bc4ae731d9f90d444a4fac6f20c31b154abf31393e0e564",
+      "properties": [
+        "alpha",
+        "scaleX",
+        "scaleY"
+      ],
+      "declaredDurationsMs": [
+        "300",
+        "50"
+      ],
+      "interpolators": [
+        "@android:anim/linear_interpolator",
+        "@anim/APKTOOL_RENAMED_0x7f010029"
+      ],
+      "repeatDeclared": false,
+      "attribution": "bundled resource; Netflix/library authorship and runtime usage unverified"
+    },
+    {
+      "path": "res/animator/APKTOOL_RENAMED_0x7f02001d.xml",
+      "format": "android-xml",
+      "sha256Decoded": "75e65a6ebbc9b547319acf607d56f240fb1d840076fd385249ad21013bc25e35",
+      "properties": [
+        "elevation",
+        "translationZ"
+      ],
+      "declaredDurationsMs": [
+        "0",
+        "100"
+      ],
+      "interpolators": [],
+      "repeatDeclared": false,
+      "attribution": "bundled resource; Netflix/library authorship and runtime usage unverified"
+    },
+    {
+      "path": "res/animator/APKTOOL_RENAMED_0x7f02001f.xml",
+      "format": "android-xml",
+      "sha256Decoded": "a5fdd7c57cbc6932fcf6bf79ccdecb16c5c31828de13fd0e1f4beb706445f05c",
+      "properties": [
+        "translationZ"
+      ],
+      "declaredDurationsMs": [
+        "120"
+      ],
+      "interpolators": [
+        "@anim/APKTOOL_RENAMED_0x7f01003d",
+        "@interpolator/APKTOOL_RENAMED_0x7f0d0011"
+      ],
+      "repeatDeclared": false,
+      "attribution": "bundled resource; Netflix/library authorship and runtime usage unverified"
+    },
+    {
+      "path": "res/animator/APKTOOL_RENAMED_0x7f020020.xml",
+      "format": "android-xml",
+      "sha256Decoded": "42ac435743a3206850cc53936a0feaf425beeb4d176eda1fc7f740e62ba62e4b",
+      "properties": [
+        "translationZ"
+      ],
+      "declaredDurationsMs": [
+        "0",
+        "100"
+      ],
+      "interpolators": [],
+      "repeatDeclared": false,
+      "attribution": "bundled resource; Netflix/library authorship and runtime usage unverified"
+    },
+    {
+      "path": "res/animator/APKTOOL_RENAMED_0x7f020025.xml",
+      "format": "android-xml",
+      "sha256Decoded": "b027f35500fb19c501586cad09d0c1f6da89041eb9f3dd87f06e0f5d125cbc26",
+      "properties": [
+        "elevation",
+        "translationZ"
+      ],
+      "declaredDurationsMs": [
+        "0",
+        "100"
+      ],
+      "interpolators": [],
+      "repeatDeclared": false,
+      "attribution": "bundled resource; Netflix/library authorship and runtime usage unverified"
+    },
+    {
+      "path": "res/animator/APKTOOL_RENAMED_0x7f020026.xml",
+      "format": "android-xml",
+      "sha256Decoded": "a0a7200fb84913957257128da88683196aecd109c607d0a8bd0f2274e79a4706",
+      "properties": [
+        "iconScale",
+        "opacity",
+        "scale"
+      ],
+      "declaredDurationsMs": [
+        "135",
+        "15",
+        "180"
+      ],
+      "interpolators": [
+        "@interpolator/APKTOOL_RENAMED_0x7f0d0010",
+        "@interpolator/APKTOOL_RENAMED_0x7f0d0012"
+      ],
+      "repeatDeclared": false,
+      "attribution": "bundled resource; Netflix/library authorship and runtime usage unverified"
+    },
+    {
+      "path": "res/animator/APKTOOL_RENAMED_0x7f020027.xml",
+      "format": "android-xml",
+      "sha256Decoded": "d586855e3c0190213d5a945d1bc45ebd530ac06e003677830d85c0644ecf6a84",
+      "properties": [
+        "iconScale",
+        "opacity",
+        "scale"
+      ],
+      "declaredDurationsMs": [
+        "15",
+        "240",
+        "330"
+      ],
+      "interpolators": [
+        "@interpolator/APKTOOL_RENAMED_0x7f0d0012",
+        "@interpolator/APKTOOL_RENAMED_0x7f0d0013"
+      ],
+      "repeatDeclared": false,
+      "attribution": "bundled resource; Netflix/library authorship and runtime usage unverified"
+    },
+    {
+      "path": "res/animator/APKTOOL_RENAMED_0x7f02002a.xml",
+      "format": "android-xml",
+      "sha256Decoded": "4a428986295cf4141b026af21e7ab157396227ced966742689b38fb4b2cce90e",
+      "properties": [
+        "scaleX",
+        "scaleY"
+      ],
+      "declaredDurationsMs": [
+        "@android:integer/config_shortAnimTime"
+      ],
+      "interpolators": [
+        "@android:interpolator/decelerate_quint"
+      ],
+      "repeatDeclared": false,
+      "attribution": "bundled resource; Netflix/library authorship and runtime usage unverified"
+    },
+    {
+      "path": "assets/lottiefiles/downloads_nux.json",
+      "format": "lottie",
+      "sha256": "7cadcce09e2ed454b5d687059ec5355f8661e0b39fb91727a42349e7ee051fb4",
+      "fps": 30,
+      "startFrame": 0,
+      "endFrame": 26,
+      "durationSeconds": 0.8667,
+      "canvas": [
+        100,
+        100
+      ],
+      "layers": 3,
+      "markers": [],
+      "attribution": "bundled in supplied APK; runtime usage and APK signature unverified"
+    },
+    {
+      "path": "assets/lottiefiles/glowing-netflix-n-logo.json",
+      "format": "lottie",
+      "sha256": "782b00852a5516e1bc18e8cbfdd0d21eb5ea3e56f703cfc642819aa769c2d9e0",
+      "fps": 60,
+      "startFrame": 0,
+      "endFrame": 120,
+      "durationSeconds": 2.0,
+      "canvas": [
+        72,
+        72
+      ],
+      "layers": 11,
+      "markers": [],
+      "attribution": "bundled in supplied APK; runtime usage and APK signature unverified"
+    },
+    {
+      "path": "assets/lottiefiles/live_now.json",
+      "format": "lottie",
+      "sha256": "68310a729b17af15b316293a6457d0591d7752daef6d8a31dd48d358712a76c6",
+      "fps": 120,
+      "startFrame": 0,
+      "endFrame": 240,
+      "durationSeconds": 2.0,
+      "canvas": [
+        48,
+        48
+      ],
+      "layers": 3,
+      "markers": [],
+      "attribution": "bundled in supplied APK; runtime usage and APK signature unverified"
+    },
+    {
+      "path": "assets/lottiefiles/my-list-plus-to-check.json",
+      "format": "lottie",
+      "sha256": "1d8b41019855a102e41a3c031a28d00cdd2112126a0d116c0a9141d9027844d6",
+      "fps": 60,
+      "startFrame": 0,
+      "endFrame": 31,
+      "durationSeconds": 0.5167,
+      "canvas": [
+        24,
+        24
+      ],
+      "layers": 1,
+      "markers": [],
+      "attribution": "bundled in supplied APK; runtime usage and APK signature unverified"
+    },
+    {
+      "path": "assets/lottiefiles/now_playing.json",
+      "format": "lottie",
+      "sha256": "df856c3fd3d88db0875459743ac60d2ba8f3ffaa801068d9775deaee9cc1e786",
+      "fps": 60,
+      "startFrame": 0,
+      "endFrame": 91,
+      "durationSeconds": 1.5167,
+      "canvas": [
+        32,
+        32
+      ],
+      "layers": 6,
+      "markers": [
+        {
+          "cm": "static",
+          "tm": 0,
+          "dr": 1
+        },
+        {
+          "cm": "loop",
+          "tm": 1,
+          "dr": 90
+        }
+      ],
+      "attribution": "bundled in supplied APK; runtime usage and APK signature unverified"
+    },
+    {
+      "path": "assets/lottiefiles/play-loading-replay.json",
+      "format": "lottie",
+      "sha256": "8797f833c26e6ef06fbf8d5a2f42eddb569e09e86a9ed06b724138600b465aee",
+      "fps": 60,
+      "startFrame": 0,
+      "endFrame": 174,
+      "durationSeconds": 2.9,
+      "canvas": [
+        58,
+        58
+      ],
+      "layers": 9,
+      "markers": [
+        {
+          "tm": 0,
+          "cm": "",
+          "dr": 0
+        },
+        {
+          "tm": 40,
+          "cm": "",
+          "dr": 0
+        },
+        {
+          "tm": 41,
+          "cm": "",
+          "dr": 0
+        },
+        {
+          "tm": 101,
+          "cm": "",
+          "dr": 0
+        },
+        {
+          "tm": 102,
+          "cm": "",
+          "dr": 0
+        },
+        {
+          "tm": 142,
+          "cm": "",
+          "dr": 0
+        },
+        {
+          "tm": 143,
+          "cm": "",
+          "dr": 0
+        }
+      ],
+      "attribution": "bundled in supplied APK; runtime usage and APK signature unverified"
+    },
+    {
+      "path": "assets/lottiefiles/play-pause.json",
+      "format": "lottie",
+      "sha256": "178c398aca14f1f293d7de884df93aa1187dbb9e7afaf19280514a74f97a3f71",
+      "fps": 60,
+      "startFrame": 0,
+      "endFrame": 21,
+      "durationSeconds": 0.35,
+      "canvas": [
+        24,
+        24
+      ],
+      "layers": 4,
+      "markers": [],
+      "attribution": "bundled in supplied APK; runtime usage and APK signature unverified"
+    },
+    {
+      "path": "assets/lottiefiles/profile_education.json",
+      "format": "lottie",
+      "sha256": "7e1c46d5d65374266231e866f9a7c1f4b69292a5e63fd0cddb2ebb634cd8a064",
+      "fps": 60,
+      "startFrame": 0,
+      "endFrame": 847,
+      "durationSeconds": 14.1167,
+      "canvas": [
+        800,
+        768
+      ],
+      "layers": 10,
+      "markers": [
+        {
+          "tm": 0,
+          "cm": "Intro",
+          "dr": 60
+        },
+        {
+          "tm": 60,
+          "cm": "Loop 1",
+          "dr": 178
+        },
+        {
+          "tm": 240,
+          "cm": "Transition 1-2\r\r",
+          "dr": 112
+        },
+        {
+          "tm": 354,
+          "cm": "Loop 2",
+          "dr": 164
+        },
+        {
+          "tm": 520,
+          "cm": "Transition 2-3\r",
+          "dr": 98
+        },
+        {
+          "tm": 620,
+          "cm": "Loop 3",
+          "dr": 170
+        },
+        {
+          "tm": 792,
+          "cm": "Dismiss",
+          "dr": 54
+        },
+        {
+          "tm": 846,
+          "cm": "Out",
+          "dr": 0
+        }
+      ],
+      "attribution": "bundled in supplied APK; runtime usage and APK signature unverified"
+    },
+    {
+      "path": "assets/lottiefiles/rating_double_thumb_star_1.json",
+      "format": "lottie",
+      "sha256": "a1abdc906c348294fc232a32a69f78a9bc8dc7082e6c63fe690b5f3e2d8ff745",
+      "fps": 30,
+      "startFrame": 0,
+      "endFrame": 42,
+      "durationSeconds": 1.4,
+      "canvas": [
+        72,
+        72
+      ],
+      "layers": 13,
+      "markers": [
+        {
+          "tm": -91,
+          "cm": "1",
+          "dr": 0
+        },
+        {
+          "tm": -27,
+          "cm": "2",
+          "dr": 0
+        }
+      ],
+      "attribution": "bundled in supplied APK; runtime usage and APK signature unverified"
+    },
+    {
+      "path": "assets/lottiefiles/rating_thumb_down.json",
+      "format": "lottie",
+      "sha256": "0edbda387cb97ef29c7961b2febbed4cfd7ee87ba351da47ef9708ed67af9d69",
+      "fps": 30,
+      "startFrame": 0,
+      "endFrame": 24,
+      "durationSeconds": 0.8,
+      "canvas": [
+        72,
+        72
+      ],
+      "layers": 1,
+      "markers": [
+        {
+          "tm": -91,
+          "cm": "1",
+          "dr": 0
+        },
+        {
+          "tm": -27,
+          "cm": "2",
+          "dr": 0
+        }
+      ],
+      "attribution": "bundled in supplied APK; runtime usage and APK signature unverified"
+    },
+    {
+      "path": "assets/lottiefiles/rating_thumb_up.json",
+      "format": "lottie",
+      "sha256": "4ddb81f7a6e2671e78e8dd8810de00248dbcdbba43358a8f73581501246aeb02",
+      "fps": 30,
+      "startFrame": 0,
+      "endFrame": 24,
+      "durationSeconds": 0.8,
+      "canvas": [
+        72,
+        72
+      ],
+      "layers": 1,
+      "markers": [
+        {
+          "tm": -91,
+          "cm": "1",
+          "dr": 0
+        },
+        {
+          "tm": -27,
+          "cm": "2",
+          "dr": 0
+        }
+      ],
+      "attribution": "bundled in supplied APK; runtime usage and APK signature unverified"
+    },
+    {
+      "path": "assets/lottiefiles/remind-me-bell-to-check.json",
+      "format": "lottie",
+      "sha256": "296bb9db6013416efd40a5de069b48161effe47d6ea4150d09ec30224f4e56bd",
+      "fps": 120,
+      "startFrame": 0,
+      "endFrame": 140,
+      "durationSeconds": 1.1667,
+      "canvas": [
+        48,
+        48
+      ],
+      "layers": 2,
+      "markers": [
+        {
+          "tm": 0,
+          "cm": "default",
+          "dr": 1
+        },
+        {
+          "tm": 1,
+          "cm": "toggleOnAnimation",
+          "dr": 99
+        },
+        {
+          "tm": 100,
+          "cm": "toggleOffAnimation",
+          "dr": 30
+        }
+      ],
+      "attribution": "bundled in supplied APK; runtime usage and APK signature unverified"
+    },
+    {
+      "path": "assets/lottiefiles/remind-me-lottie.json",
+      "format": "lottie",
+      "sha256": "63e9523d619da40c35388e4b46f6657a97c573bdfd07a7cbc23a280c7048d719",
+      "fps": 60,
+      "startFrame": 0,
+      "endFrame": 41,
+      "durationSeconds": 0.6833,
+      "canvas": [
+        24,
+        24
+      ],
+      "layers": 3,
+      "markers": [
+        {
+          "cm": "toggleOff",
+          "tm": 0,
+          "dr": 1
+        },
+        {
+          "cm": "toggleOnAnimation",
+          "tm": 1,
+          "dr": 37
+        },
+        {
+          "cm": "toggleOn",
+          "tm": 38,
+          "dr": 1
+        },
+        {
+          "cm": "toggleOffAnimation",
+          "tm": 39,
+          "dr": 1
+        }
+      ],
+      "attribution": "bundled in supplied APK; runtime usage and APK signature unverified"
+    },
+    {
+      "path": "assets/lottiefiles/switch_lottie_animation_dark.json",
+      "format": "lottie",
+      "sha256": "a6cd04c6e48c25c7bf70bda98ede04709331e51baaea349e958a3d8279e7fc29",
+      "fps": 60,
+      "startFrame": 0,
+      "endFrame": 91,
+      "durationSeconds": 1.5167,
+      "canvas": [
+        12,
+        12
+      ],
+      "layers": 1,
+      "markers": [],
+      "attribution": "bundled in supplied APK; runtime usage and APK signature unverified"
+    },
+    {
+      "path": "assets/lottiefiles/switch_lottie_animation_light.json",
+      "format": "lottie",
+      "sha256": "c096a6273dda813bcd3376fe3f422a553a66250888f00dfe0844622d989d5127",
+      "fps": 60,
+      "startFrame": 0,
+      "endFrame": 91,
+      "durationSeconds": 1.5167,
+      "canvas": [
+        12,
+        12
+      ],
+      "layers": 1,
+      "markers": [],
+      "attribution": "bundled in supplied APK; runtime usage and APK signature unverified"
+    }
+  ]
+}

@@ -88,14 +88,17 @@ test("local assets load and no browser errors occur during discovery", async ({
   expect(failed).toEqual([]);
 });
 
-test("more than 50 named effects run through real interface interactions", async ({
+test("more than 60 named effects run through real interface interactions", async ({
   page,
-}) => {
+}, testInfo) => {
   test.setTimeout(60000);
   await page.emulateMedia({ reducedMotion: "no-preference" });
   await page.addInitScript(() => {
     const state = window as unknown as { observedMotion: string[] };
     state.observedMotion = [];
+    localStorage.setItem("netflix-demo.library.v1", JSON.stringify({ version: 1, profiles: {
+      visitor: { list: [], progress: { horizon: { position: 10, duration: 52, updatedAt: Date.now() } } },
+    } }));
     document.addEventListener(
       "animationstart",
       (event) => {
@@ -130,6 +133,10 @@ test("more than 50 named effects run through real interface interactions", async
     .getByRole("button", { name: "Adicionar à Minha Lista", exact: true })
     .click();
   await page.keyboard.press("Escape");
+  await page.route(/\/media\/.*\.(mp4|webm)$/, route => route.abort());
+  await page.getByRole("button", { name: "Assistir agora", exact: true }).click();
+  await expect(page.getByText("Não foi possível carregar o vídeo.")).toBeVisible();
+  await page.keyboard.press("Escape");
   await page.locator(".title-section").first().locator("h2").hover();
   await page
     .getByRole("button", { name: "Voltar em Sua próxima descoberta" })
@@ -156,5 +163,10 @@ test("more than 50 named effects run through real interface interactions", async
             .length,
       ),
     )
-    .toBeGreaterThan(50);
+    .toBeGreaterThan(60);
+  await testInfo.attach("observed-motion", {
+    body: JSON.stringify(await page.evaluate(() =>
+      (window as unknown as { observedMotion: string[] }).observedMotion), null, 2),
+    contentType: "application/json",
+  });
 });

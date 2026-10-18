@@ -6,7 +6,7 @@ Uma experiência responsiva de streaming em português, com catálogo de exemplo
 
 ## Executar
 
-Requer Node.js 22.19+ (ou 24+) e npm.
+Requer Node.js 24+ e npm.
 
 ```bash
 npm ci
@@ -35,7 +35,7 @@ Os testes de navegador usam `/usr/bin/chromium` quando disponível. Em outros am
 - Estados vazios, tratamento de falha de mídia e continuidade em memória se o armazenamento estiver indisponível.
 - Layout móvel, navegação por teclado e diálogos com foco contido/restaurado.
 - Ações rápidas de assistir/salvar nos cards, acessíveis com mouse, toque e teclado.
-- 64 animações finitas de entrada e microinterações, com revelação por viewport e respeito a movimento reduzido. Veja [catálogo de animações](docs/animations.md).
+- 67 animações finitas de entrada e microinterações, com revelação por viewport e respeito a movimento reduzido. Veja [catálogo de animações](docs/animations.md).
 - Fotos e fontes locais; cards dos filmes abertos usam imagens de seus trailers.
 
 ## Organização
@@ -48,7 +48,7 @@ Os testes de navegador usam `/usr/bin/chromium` quando disponível. Em outros am
 - `tests/`: testes de domínio e fluxos reais no Chromium.
 - `docs/analysis/`: evidências resumidas do REA e limites da análise.
 
-O armazenamento usa `netflix-demo.library.v1` e `netflix-demo.active-profile` no `localStorage`. Os dados permanecem neste navegador; não existe conta, senha, backend ou sincronização entre dispositivos. A navegação de páginas não persiste após recarregar; listas, perfil ativo e progresso persistem.
+O armazenamento usa `netflix-demo.library.v1` e `netflix-demo.active-profile` no `localStorage`. Os dados permanecem neste navegador; não existe conta, senha ou sincronização entre dispositivos. O backend serve somente o catálogo e os perfis públicos da demo. A navegação de páginas não persiste após recarregar; listas, perfil ativo e progresso persistem.
 
 ## Mídias e limites
 
@@ -56,11 +56,11 @@ O catálogo contém dez títulos fictícios e dois trailers reais de filmes aber
 
 A análise do REA identificou o pacote e classes de interface do APK. Não houve captura das telas nem execução do aplicativo Android: esta é uma reconstrução demonstrativa inspirada na estrutura observada, não uma cópia validada tela a tela. Veja [análise](docs/analysis/README.md) e [proposta aprovada](docs/web-demo-design.md).
 
-Uma futura aplicação Android poderá compartilhar contratos e um catálogo servido por API. Componentes React de navegador não são diretamente reutilizáveis em uma interface Android nativa.
+Uma futura aplicação Android poderá consumir os contratos da API já implementada. Componentes React de navegador não são diretamente reutilizáveis em uma interface Android nativa.
 
 ## Publicação
 
-O build em `dist/` pode ser servido por qualquer hospedagem estática na raiz do domínio. O aplicativo não exige variáveis de ambiente nem chaves. Para hospedagem em subdiretório, é necessário ajustar o `base` do Vite e os caminhos de mídia antes de publicar.
+Execute `npm run build` e `npm start` em um host com Node 24+. O servidor entrega o site e a API na mesma origem; hospedagem apenas estática de `dist/` não é suficiente. A demo não exige chaves externas. `PORT` e `HOST` são opcionais. Veja [instruções de produção](docs/api.md).
 
 Projeto independente, sem vínculo com a Netflix.
 
@@ -68,4 +68,12 @@ Projeto independente, sem vínculo com a Netflix.
 
 As referências de navegação, imagens e acessibilidade estão em [docs/web-research.md](docs/web-research.md). As animações são próprias, não código copiado da Netflix.
 
-O workflow `.github/workflows/ci.yml` executa testes de domínio, validação das animações, TypeScript, build e fluxos Chromium em cada push/PR. O teste de movimento também observa mais de 50 efeitos efetivamente iniciados durante interações reais. Não há monitoramento de produção nem promessa de ausência de erros futuros; novos casos devem virar regressões automatizadas.
+O workflow `.github/workflows/ci.yml` executa testes de domínio, validação das animações, TypeScript, build e fluxos Chromium em cada push/PR. O teste de movimento também observa mais de 60 efeitos efetivamente iniciados durante interações reais. Não há monitoramento de produção nem promessa de ausência de erros futuros; novos casos devem virar regressões automatizadas.
+
+## API e pesquisa de motion
+
+O site agora recebe catálogo/perfis da [API própria](docs/api.md), disponível em desenvolvimento e com `npm run build && npm start` em produção (Node 24+). É preciso executar o servidor, não apenas hospedar `dist/`. Listas/progresso permanecem locais.
+
+[Pesquisa com fontes reais](docs/motion-research.md): 72 recursos de animação inventariados no APK (57 XML + 15 Lottie), página pública medida e referências dos estúdios responsáveis pela marca. [67 animações próprias do site](docs/animations.md), com movimento reduzido e confirmação SVG. As contagens do APK, marca e website não são intercambiáveis.
+
+Validação adicional: `npm run test:production` depois do build. [Inventário verificável dos recursos](docs/analysis/motion-resources.md).

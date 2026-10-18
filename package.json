@@ -8,21 +8,28 @@
     "build": "tsc --noEmit && vite build",
     "preview": "vite preview --host 0.0.0.0",
     "test": "vitest run",
-    "test:browser": "playwright test"
+    "test:browser": "playwright test",
+    "start": "node server/index.ts",
+    "test:production": "TEST_PRODUCTION=1 playwright test"
   },
   "dependencies": {
     "react": "^19.2.0",
-    "react-dom": "^19.2.0"
+    "react-dom": "^19.2.0",
+    "serve-static": "^2.2.1"
   },
   "devDependencies": {
     "@playwright/test": "^1.56.0",
     "@types/node": "^24.0.0",
     "@types/react": "^19.2.0",
     "@types/react-dom": "^19.2.0",
+    "@types/serve-static": "^2.2.0",
     "@vitejs/plugin-react": "^5.0.4",
     "postcss": "^8.5.31",
     "typescript": "^5.9.3",
     "vite": "^7.1.10",
     "vitest": "^3.2.4"
+  },
+  "engines": {
+    "node": ">=24.0.0"
   }
 }

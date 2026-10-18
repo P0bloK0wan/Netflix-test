@@ -1,6 +1,5 @@
 import { useMemo, useState } from "react";
 import { useReveal, scrollBehavior } from "./useReveal";
-import { catalog, profiles } from "./data/catalog";
 import { filterTitles } from "./domain/catalog";
 import { browserStorage, createLibrary } from "./domain/storage";
 import type { Profile, Title } from "./domain/types";
@@ -12,7 +11,7 @@ import { Details } from "./components/Details";
 import { Profiles } from "./components/Profiles";
 import { Player } from "./components/Player";
 const PROFILE_KEY = "netflix-demo.active-profile";
-const initialProfile = () => {
+const initialProfile = (profiles: Profile[]) => {
   try {
     return (
       profiles.find((p) => p.id === browserStorage()?.getItem(PROFILE_KEY)) ??
@@ -22,9 +21,9 @@ const initialProfile = () => {
     return profiles[0];
   }
 };
-export default function App() {
+export default function App({ catalog, profiles }: { catalog: Title[]; profiles: Profile[] }) {
   const [library] = useState(() => createLibrary(browserStorage()));
-  const [profile, setProfile] = useState<Profile>(initialProfile);
+  const [profile, setProfile] = useState<Profile>(() => initialProfile(profiles));
   const [revision, refresh] = useState(0);
   const state = useMemo(
     () => library.read(profile.id),
@@ -36,7 +35,7 @@ export default function App() {
   const [details, setDetails] = useState<Title | null>(null);
   const [player, setPlayer] = useState<Title | null>(null);
   const [showProfiles, setShowProfiles] = useState(false);
-  const featured = catalog[0];
+  const featured = catalog.find(t => t.featured) ?? catalog[0];
   const navigate = (next: Tab) => {
     setTab(next);
     setQuery("");
@@ -105,10 +104,11 @@ export default function App() {
               <img
                 className="hero-image"
                 src={featured.image}
-                alt="Montanhas ao pôr do sol"
+                alt=""
                 fetchPriority="high"
               />
               <div className="hero-overlay" />
+              <div className="hero-stream" aria-hidden="true" />
               <div className="hero-content">
                 <div className="hero-kicker">
                   <span className="netflix-n">N</span>
@@ -116,22 +116,20 @@ export default function App() {
                 </div>
                 <p className="hero-eyebrow">EXPLORE O EXTRAORDINÁRIO</p>
                 <h1>
-                  Além do
+                  {featured.name.split(" ").slice(0, -1).join(" ")}
                   <br />
-                  <span>Horizonte</span>
+                  <span>{featured.name.split(" ").at(-1)}</span>
                 </h1>
                 <div className="hero-meta">
                   <span className="feature-badge">DESTAQUE</span>
-                  <span>2026</span>
+                  <span>{featured.year}</span>
                   <span>•</span>
-                  <span>Aventura</span>
+                  <span>{featured.genres[0]}</span>
                   <span>•</span>
-                  <span>1h 48min</span>
+                  <span>{featured.duration}</span>
                 </div>
                 <p className="hero-description">
-                  Às vezes, é preciso ir mais longe
-                  <br className="desktop-break" /> para encontrar o que está
-                  dentro de você.
+                  {featured.tagline}
                 </p>
                 <div className="button-group">
                   <button
@@ -158,7 +156,7 @@ export default function App() {
                 <span className="hero-page">
                   <b>01</b> / 06
                 </span>
-                <span className="age-rating">12</span>
+                <span className="age-rating">{featured.rating}</span>
               </div>
             </section>
             <div className="home-content">
@@ -191,7 +189,7 @@ export default function App() {
                   catalog[4],
                   catalog[2],
                   catalog[8],
-                ]}
+                ].filter((title): title is Title => Boolean(title))}
                 onDetails={setDetails}
                 onPlay={play}
                 onToggle={toggle}
@@ -343,6 +341,7 @@ export default function App() {
       )}
       {showProfiles && (
         <Profiles
+          profiles={profiles}
           current={profile.id}
           onSelect={selectProfile}
           onClose={() => setShowProfiles(false)}

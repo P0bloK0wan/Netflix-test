@@ -1,6 +1,6 @@
-# Catálogo das 64 animações
+# Catálogo das 67 animações próprias
 
-Cada linha é uma animação CSS nomeada e conectada à interface. As entradas são finitas; animações de interação são acionadas por hover/foco/estado, sem loops. O catálogo completo não é executado simultaneamente. Preferências de movimento reduzido desativam todas.
+São adaptações próprias; as evidências reais e seus limites estão em [motion-research.md](motion-research.md). Cada linha é uma animação CSS nomeada e conectada à interface. As entradas são finitas; animações de interação são acionadas por hover/foco/estado, sem loops infinitos. O carregamento executa no máximo três ciclos. O catálogo completo não é executado simultaneamente. Preferências de movimento reduzido desativam todas.
 
 | Nº | Nome | Aplicação | Duração |
 |---|---|---|---|
@@ -68,5 +68,10 @@ Cada linha é uma animação CSS nomeada e conectada à interface. As entradas s
 | 62 | `player-open` | Abertura do player | 230 ms |
 | 63 | `player-error` | Entrada da recuperação de erro | 250 ms |
 | 64 | `footer-enter` | Entrada do rodapé | 450 ms |
+| 65 | `stream-travel` | Faixa vertical no destaque | 1200 ms |
+| 66 | `stream-loading` | Faixas durante busca do catálogo na API | 1000 ms × 3 |
+| 67 | `title-stream-reveal` | Revelação horizontal do título de detalhes | 400 ms |
 
 As fileiras são reveladas quando entram na área visível, sem ocultar permanentemente o conteúdo. Atrasos de cards e perfis são curtos e limitados. O teste de estrutura verifica contagem, uso e ausência de repetição infinita; os testes do navegador verificam comportamento e movimento reduzido.
+
+A transição SVG `ListMark` é adicional aos 67 keyframes: desenha a confirmação em 517 ms, informada pelo recurso Lottie do APK. Não é o arquivo original nem reprodução do path proprietário.

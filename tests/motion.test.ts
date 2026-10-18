@@ -1,7 +1,7 @@
 import { it, expect } from "vitest";
 import { readFileSync } from "node:fs";
 import postcss from "postcss";
-it("ships more than 50 finite, connected animations with a reduced-motion override", () => {
+it("ships more than 60 finite, connected animations with a reduced-motion override", () => {
   const css = readFileSync(
     new URL("../src/motion.css", import.meta.url),
     "utf8",
@@ -16,7 +16,7 @@ it("ships more than 50 finite, connected animations with a reduced-motion overri
     expect(decl.value).not.toContain("infinite");
     used.add(decl.value.split(/\s/)[0]);
   });
-  expect(defined.size).toBeGreaterThan(50);
+  expect(defined.size).toBeGreaterThan(60);
   for (const name of defined)
     expect(used.has(name), `Unused animation: ${name}`).toBe(true);
   expect(css).toContain("prefers-reduced-motion: reduce");

@@ -1,0 +1,368 @@
+{
+  "url": "https://www.netflix.com/br/",
+  "title": "Netflix Brasil - assistir a séries online, assistir a filmes online",
+  "effects": [
+    {
+      "tag": "SPAN",
+      "text": "",
+      "animation": "none",
+      "transition": "top 0.25s cubic-bezier(0.32, 0.94, 0.6, 1), font-size 0.25s cubic-bezier(0.32, 0.94, 0.6, 1), line-height 0.25s cubic-bezier(0.32, 0.94, 0.6, 1)"
+    },
+    {
+      "tag": "SELECT",
+      "text": "PortuguêsEnglish",
+      "animation": "animation-und0r9-autofillEnd",
+      "transition": "all"
+    },
+    {
+      "tag": "A",
+      "text": "Entrar",
+      "animation": "none",
+      "transition": "background-color 0.25s cubic-bezier(0.4, 0, 0.68, 0.06), border-color 0.25s cubic-bezier(0.4, 0, 0.68, 0.06)"
+    },
+    {
+      "tag": "LABEL",
+      "text": "Email",
+      "animation": "none",
+      "transition": "top 0.25s cubic-bezier(0.4, 0, 0.68, 0.06), font-size 0.25s cubic-bezier(0.4, 0, 0.68, 0.06), line-height 0.25s cubic-bezier(0.4, 0, 0.68, 0.06)"
+    },
+    {
+      "tag": "INPUT",
+      "text": "",
+      "animation": "animation-und0r9-autofillEnd",
+      "transition": "all"
+    },
+    {
+      "tag": "BUTTON",
+      "text": "Vamos lá",
+      "animation": "none",
+      "transition": "background-color 0.25s cubic-bezier(0.4, 0, 0.68, 0.06), border-color 0.25s cubic-bezier(0.4, 0, 0.68, 0.06)"
+    },
+    {
+      "tag": "DIV",
+      "text": "A Netflix que você adora por apenas R$ 25,90.Aproveite nossa opção mai",
+      "animation": "none",
+      "transition": "0.5s cubic-bezier(0.33, 0, 0, 1)"
+    },
+    {
+      "tag": "BUTTON",
+      "text": "Saiba mais",
+      "animation": "none",
+      "transition": "background-color 0.25s cubic-bezier(0.4, 0, 0.68, 0.06), border-color 0.25s cubic-bezier(0.4, 0, 0.68, 0.06)"
+    },
+    {
+      "tag": "BUTTON",
+      "text": "Meu Nome é Farah11",
+      "animation": "none",
+      "transition": "transform 0.2s ease-in-out"
+    },
+    {
+      "tag": "DIV",
+      "text": "",
+      "animation": "4s linear infinite loading",
+      "transition": "all"
+    },
+    {
+      "tag": "BUTTON",
+      "text": "O Mentalista22",
+      "animation": "none",
+      "transition": "transform 0.2s ease-in-out"
+    },
+    {
+      "tag": "DIV",
+      "text": "",
+      "animation": "4s linear 0.4s infinite loading",
+      "transition": "all"
+    },
+    {
+      "tag": "BUTTON",
+      "text": "Sobrevivência33",
+      "animation": "none",
+      "transition": "transform 0.2s ease-in-out"
+    },
+    {
+      "tag": "DIV",
+      "text": "",
+      "animation": "4s linear 0.8s infinite loading",
+      "transition": "all"
+    },
+    {
+      "tag": "BUTTON",
+      "text": "Profundezas44",
+      "animation": "none",
+      "transition": "transform 0.2s ease-in-out"
+    },
+    {
+      "tag": "DIV",
+      "text": "",
+      "animation": "4s linear 1.2s infinite loading",
+      "transition": "all"
+    },
+    {
+      "tag": "BUTTON",
+      "text": "Nando entre Dois Mundos - Um Filme Sintonia55",
+      "animation": "none",
+      "transition": "transform 0.2s ease-in-out"
+    },
+    {
+      "tag": "DIV",
+      "text": "",
+      "animation": "4s linear 1.6s infinite loading",
+      "transition": "all"
+    },
+    {
+      "tag": "BUTTON",
+      "text": "A Era do Gelo: O Big Bang66",
+      "animation": "none",
+      "transition": "transform 0.2s ease-in-out"
+    },
+    {
+      "tag": "DIV",
+      "text": "",
+      "animation": "4s linear 2s infinite loading",
+      "transition": "all"
+    },
+    {
+      "tag": "BUTTON",
+      "text": "Para Sempre no Meu Coração77",
+      "animation": "none",
+      "transition": "transform 0.2s ease-in-out"
+    },
+    {
+      "tag": "DIV",
+      "text": "",
+      "animation": "4s linear 2.4s infinite loading",
+      "transition": "all"
+    },
+    {
+      "tag": "BUTTON",
+      "text": "O Protetor: Capítulo Final88",
+      "animation": "none",
+      "transition": "transform 0.2s ease-in-out"
+    },
+    {
+      "tag": "DIV",
+      "text": "",
+      "animation": "4s linear 2.8s infinite loading",
+      "transition": "all"
+    },
+    {
+      "tag": "BUTTON",
+      "text": "Como Mágica99",
+      "animation": "none",
+      "transition": "transform 0.2s ease-in-out"
+    },
+    {
+      "tag": "DIV",
+      "text": "",
+      "animation": "4s linear 3.2s infinite loading",
+      "transition": "all"
+    },
+    {
+      "tag": "BUTTON",
+      "text": "Um Choque de Amor1010",
+      "animation": "none",
+      "transition": "transform 0.2s ease-in-out"
+    },
+    {
+      "tag": "DIV",
+      "text": "",
+      "animation": "4s linear 3.6s infinite loading",
+      "transition": "all"
+    },
+    {
+      "tag": "DIV",
+      "text": "",
+      "animation": "none",
+      "transition": "transform 0.4s ease-in-out"
+    },
+    {
+      "tag": "BUTTON",
+      "text": "",
+      "animation": "none",
+      "transition": "opacity 0.4s ease-in-out"
+    },
+    {
+      "tag": "H3",
+      "text": "O que é a Netflix?",
+      "animation": "none",
+      "transition": "background-color 0.25s cubic-bezier(0.4, 0, 0.68, 0.06), border-radius 0.25s cubic-bezier(0.4, 0, 0.68, 0.06)"
+    },
+    {
+      "tag": "SPAN",
+      "text": "",
+      "animation": "none",
+      "transition": "transform 0.25s cubic-bezier(0.32, 0.94, 0.6, 1)"
+    },
+    {
+      "tag": "SPAN",
+      "text": "",
+      "animation": "none",
+      "transition": "transform 0.25s cubic-bezier(0.32, 0.94, 0.6, 1)"
+    },
+    {
+      "tag": "DIV",
+      "text": "A Netflix é um serviço de streaming que oferece uma ampla variedade de",
+      "animation": "none",
+      "transition": "0.25s cubic-bezier(0.32, 0.94, 0.6, 1)"
+    },
+    {
+      "tag": "H3",
+      "text": "Quanto custa a Netflix?",
+      "animation": "none",
+      "transition": "background-color 0.25s cubic-bezier(0.4, 0, 0.68, 0.06), border-radius 0.25s cubic-bezier(0.4, 0, 0.68, 0.06)"
+    },
+    {
+      "tag": "SPAN",
+      "text": "",
+      "animation": "none",
+      "transition": "transform 0.25s cubic-bezier(0.32, 0.94, 0.6, 1)"
+    },
+    {
+      "tag": "SPAN",
+      "text": "",
+      "animation": "none",
+      "transition": "transform 0.25s cubic-bezier(0.32, 0.94, 0.6, 1)"
+    },
+    {
+      "tag": "DIV",
+      "text": "Assista à Netflix no seu celular, tablet, Smart TV, notebook ou aparel",
+      "animation": "none",
+      "transition": "0.25s cubic-bezier(0.32, 0.94, 0.6, 1)"
+    },
+    {
+      "tag": "H3",
+      "text": "Onde posso assistir?",
+      "animation": "none",
+      "transition": "background-color 0.25s cubic-bezier(0.4, 0, 0.68, 0.06), border-radius 0.25s cubic-bezier(0.4, 0, 0.68, 0.06)"
+    },
+    {
+      "tag": "SPAN",
+      "text": "",
+      "animation": "none",
+      "transition": "transform 0.25s cubic-bezier(0.32, 0.94, 0.6, 1)"
+    },
+    {
+      "tag": "SPAN",
+      "text": "",
+      "animation": "none",
+      "transition": "transform 0.25s cubic-bezier(0.32, 0.94, 0.6, 1)"
+    },
+    {
+      "tag": "DIV",
+      "text": "Assista onde quiser, quando quiser. Acesse sua conta Netflix em netfli",
+      "animation": "none",
+      "transition": "0.25s cubic-bezier(0.32, 0.94, 0.6, 1)"
+    },
+    {
+      "tag": "H3",
+      "text": "Como faço para cancelar?",
+      "animation": "none",
+      "transition": "background-color 0.25s cubic-bezier(0.4, 0, 0.68, 0.06), border-radius 0.25s cubic-bezier(0.4, 0, 0.68, 0.06)"
+    },
+    {
+      "tag": "SPAN",
+      "text": "",
+      "animation": "none",
+      "transition": "transform 0.25s cubic-bezier(0.32, 0.94, 0.6, 1)"
+    },
+    {
+      "tag": "SPAN",
+      "text": "",
+      "animation": "none",
+      "transition": "transform 0.25s cubic-bezier(0.32, 0.94, 0.6, 1)"
+    },
+    {
+      "tag": "DIV",
+      "text": "A Netflix é flexível. Você pode cancelar a sua conta online com apenas",
+      "animation": "none",
+      "transition": "0.25s cubic-bezier(0.32, 0.94, 0.6, 1)"
+    },
+    {
+      "tag": "H3",
+      "text": "O que eu posso assistir na Netflix?",
+      "animation": "none",
+      "transition": "background-color 0.25s cubic-bezier(0.4, 0, 0.68, 0.06), border-radius 0.25s cubic-bezier(0.4, 0, 0.68, 0.06)"
+    },
+    {
+      "tag": "SPAN",
+      "text": "",
+      "animation": "none",
+      "transition": "transform 0.25s cubic-bezier(0.32, 0.94, 0.6, 1)"
+    },
+    {
+      "tag": "SPAN",
+      "text": "",
+      "animation": "none",
+      "transition": "transform 0.25s cubic-bezier(0.32, 0.94, 0.6, 1)"
+    },
+    {
+      "tag": "DIV",
+      "text": "A Netflix tem um grande catálogo de filmes, documentários, séries, ori",
+      "animation": "none",
+      "transition": "0.25s cubic-bezier(0.32, 0.94, 0.6, 1)"
+    },
+    {
+      "tag": "H3",
+      "text": "A Netflix é adequada para crianças?",
+      "animation": "none",
+      "transition": "background-color 0.25s cubic-bezier(0.4, 0, 0.68, 0.06), border-radius 0.25s cubic-bezier(0.4, 0, 0.68, 0.06)"
+    },
+    {
+      "tag": "SPAN",
+      "text": "",
+      "animation": "none",
+      "transition": "transform 0.25s cubic-bezier(0.32, 0.94, 0.6, 1)"
+    },
+    {
+      "tag": "SPAN",
+      "text": "",
+      "animation": "none",
+      "transition": "transform 0.25s cubic-bezier(0.32, 0.94, 0.6, 1)"
+    },
+    {
+      "tag": "DIV",
+      "text": "A experiência infantil da Netflix faz parte da sua assinatura para que",
+      "animation": "none",
+      "transition": "0.25s cubic-bezier(0.32, 0.94, 0.6, 1)"
+    },
+    {
+      "tag": "LABEL",
+      "text": "Email",
+      "animation": "none",
+      "transition": "top 0.25s cubic-bezier(0.4, 0, 0.68, 0.06), font-size 0.25s cubic-bezier(0.4, 0, 0.68, 0.06), line-height 0.25s cubic-bezier(0.4, 0, 0.68, 0.06)"
+    },
+    {
+      "tag": "INPUT",
+      "text": "",
+      "animation": "animation-und0r9-autofillEnd",
+      "transition": "all"
+    },
+    {
+      "tag": "BUTTON",
+      "text": "Vamos lá",
+      "animation": "none",
+      "transition": "background-color 0.25s cubic-bezier(0.4, 0, 0.68, 0.06), border-color 0.25s cubic-bezier(0.4, 0, 0.68, 0.06)"
+    },
+    {
+      "tag": "SPAN",
+      "text": "",
+      "animation": "none",
+      "transition": "top 0.25s cubic-bezier(0.32, 0.94, 0.6, 1), font-size 0.25s cubic-bezier(0.32, 0.94, 0.6, 1), line-height 0.25s cubic-bezier(0.32, 0.94, 0.6, 1)"
+    },
+    {
+      "tag": "SELECT",
+      "text": "PortuguêsEnglish",
+      "animation": "animation-und0r9-autofillEnd",
+      "transition": "all"
+    }
+  ],
+  "capturedDate": "2026-10-18",
+  "viewport": {
+    "width": 1440,
+    "height": 1000
+  },
+  "authenticated": false,
+  "scope": "Computed styles at capture time. Repeated instances are not distinct animation designs.",
+  "elementCount": 59
+}

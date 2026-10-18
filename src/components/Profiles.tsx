@@ -1,12 +1,13 @@
-import { profiles } from "../data/catalog";
 import type { Profile } from "../domain/types";
 import { Dialog } from "./Dialog";
 import { Icon } from "./Icon";
 export function Profiles({
+  profiles,
   current,
   onSelect,
   onClose,
 }: {
+  profiles: Profile[];
   current: string;
   onSelect: (p: Profile) => void;
   onClose: () => void;

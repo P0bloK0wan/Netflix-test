@@ -1,5 +1,6 @@
 import type { CSSProperties } from "react";
 import { Icon } from "./Icon";
+import { ListMark } from "./ListMark";
 import type { Title, WatchProgress } from "../domain/types";
 export function TitleCard({
   title,
@@ -100,7 +101,7 @@ export function TitleCard({
               });
           }}
         >
-          <Icon name={inList ? "check" : "plus"} size={18} />
+          <ListMark saved={inList} size={18} />
         </button>
       </div>
     </div>
