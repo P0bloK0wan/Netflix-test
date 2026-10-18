@@ -108,3 +108,38 @@ test("mobile layout, empty search and film filter", async ({ page }) => {
     await page.evaluate(() => document.documentElement.scrollWidth),
   ).toBeLessThanOrEqual(390);
 });
+
+test("retry preserves progress after a mid-playback failure", async ({
+  page,
+}) => {
+  await page.goto("/");
+  await page
+    .getByRole("button", { name: "Assistir agora", exact: true })
+    .click();
+  const video = page.locator("video");
+  await expect
+    .poll(() => video.evaluate((v: HTMLVideoElement) => v.readyState))
+    .toBeGreaterThanOrEqual(2);
+  await video.evaluate((v: HTMLVideoElement) => {
+    v.currentTime = 20;
+    v.pause();
+  });
+  await expect
+    .poll(() => video.evaluate((v: HTMLVideoElement) => v.currentTime))
+    .toBeGreaterThanOrEqual(20);
+  await video.evaluate((v) => v.dispatchEvent(new Event("error")));
+  await page.getByRole("button", { name: "Tentar novamente" }).click();
+  await expect
+    .poll(() => video.evaluate((v: HTMLVideoElement) => v.readyState))
+    .toBeGreaterThanOrEqual(2);
+  await expect
+    .poll(() => video.evaluate((v: HTMLVideoElement) => v.currentTime))
+    .toBeGreaterThanOrEqual(20);
+  await page.getByRole("button", { name: "Fechar player" }).click();
+  const saved = await page.evaluate(
+    () =>
+      JSON.parse(localStorage.getItem("netflix-demo.library.v1")!).profiles
+        .visitor.progress.horizon.position,
+  );
+  expect(saved).toBeGreaterThanOrEqual(20);
+});

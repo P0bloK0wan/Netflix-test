@@ -19,6 +19,10 @@ Fotografias adquiridas do Unsplash e armazenadas localmente. As URLs originais e
 
 ## Tipografia e interface
 
-DM Sans e Manrope são fontes abertas disponibilizadas pelo Google Fonts sob SIL Open Font License. A interface tem fallback para fontes do sistema. Ícones são SVGs simples escritos para o projeto.
+DM Sans e Manrope são fontes abertas disponibilizadas pelo Google Fonts sob SIL Open Font License. São distribuídas localmente em `public/fonts/`, com os arquivos de licença correspondentes. Fontes originais: https://github.com/google/fonts/tree/main/ofl/dmsans e https://github.com/google/fonts/tree/main/ofl/manrope. A interface tem fallback para fontes do sistema. Ícones são SVGs simples escritos para o projeto.
 
 Netflix é marca de seu respectivo titular. Este projeto é uma demonstração independente sem afiliação. Não distribui código descompilado, logotipos extraídos, filmes da Netflix nem credenciais. A referência ao APK e os limites da análise estão em `analysis/README.md`.
+
+## Imagens dos filmes abertos
+
+`public/media/sintel.jpg` (34 s) e `public/media/bunny.jpg` (16 s) são quadros extraídos dos respectivos trailers locais, com a mesma atribuição e licença CC BY 3.0 acima. Substituem as fotografias genéricas nos cards desses dois filmes.

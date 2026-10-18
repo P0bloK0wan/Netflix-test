@@ -1,6 +1,6 @@
 # Proposta: demonstração web baseada na análise do APK
 
-Estado: aprovada pelo usuário; implementação em andamento.
+Estado: aprovada pelo usuário; implementação concluída e validada localmente.
 
 ## Objetivo e decisões confirmadas
 
@@ -51,3 +51,7 @@ Não inclui autenticação real, cobrança, reprodução do catálogo da Netflix
 ## Entrega prevista
 
 Código e documentação no checkout `/workspace/Netflix-test`. Manter APK, ferramentas e evidências integrais fora do histórico Git. A publicação remota depende de credenciais disponíveis para o repositório; ainda não foi verificada permissão de escrita. Nenhum commit foi enviado ao GitHub na análise inicial.
+
+## Ampliação solicitada durante a implementação
+
+O usuário pediu pesquisa pública sobre a experiência web, fotos e mais de 50 animações, além de prevenção contínua de regressões. A ampliação mantém a demonstração local aprovada: 64 efeitos nomeados, ações rápidas nos cards, imagens dos trailers abertos, preferência de movimento reduzido e checks automáticos no GitHub. A pesquisa e os limites estão em `web-research.md`.

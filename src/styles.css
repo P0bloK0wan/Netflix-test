@@ -1,4 +1,17 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;450;500;550;600;650;700&family=Manrope:wght@400;500;600;650;700;800&display=swap");
+@font-face {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 100 1000;
+  font-display: swap;
+  src: url("/fonts/dm-sans.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 200 800;
+  font-display: swap;
+  src: url("/fonts/manrope.ttf") format("truetype");
+}
 :root {
   font-family: "DM Sans", Arial, sans-serif;
   color: #f5f5f1;
@@ -1349,5 +1362,62 @@ dialog::backdrop {
   *:after {
     scroll-behavior: auto !important;
     transition: none !important;
+  }
+}
+
+/* Quick actions stay outside the main card button for valid keyboard semantics. */
+.card-wrap {
+  position: relative;
+}
+.card-quick-actions {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: flex;
+  gap: 6px;
+  opacity: 0;
+  pointer-events: none;
+}
+.card-wrap:hover .card-quick-actions,
+.card-wrap:focus-within .card-quick-actions {
+  opacity: 1;
+  pointer-events: auto;
+}
+.card-quick-actions button {
+  border: 1px solid #ffffff90;
+  border-radius: 50%;
+  width: 31px;
+  height: 31px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #181818df;
+}
+.card-quick-actions .quick-play {
+  background: #f6f4ee;
+  color: #151515;
+}
+.card-quick-actions button:hover {
+  border-color: white;
+  box-shadow: 0 0 0 2px #ffffff30;
+}
+.card-wrap:is(:hover, :focus-within) .card-type {
+  opacity: 0;
+}
+.quick-save[aria-pressed="true"] {
+  color: #b4e6bf;
+}
+.hero h1 span,
+.down-caret,
+.heading-dot {
+  display: inline-block;
+}
+@media (hover: none) {
+  .card-quick-actions {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .card-type {
+    display: none;
   }
 }

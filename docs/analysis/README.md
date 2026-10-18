@@ -21,7 +21,7 @@ Esta é uma análise estática; o APK não foi executado. Não foram observadas 
 
 O APK não fornece uma implementação dos servidores, contas, licenciamento de mídia ou catálogo completo da Netflix. A versão web precisa de uma fonte de dados definida: demonstração com mídia de exemplo ou catálogo e vídeos fornecidos pelo usuário. O usuário escolheu uma demonstração funcional com catálogo e vídeos de exemplo.
 
-A implementação web ainda não começou. Uma arquitetura proposta para a etapa seguinte é uma interface responsiva com modelos de catálogo e perfil separados do acesso a dados, permitindo reaproveitamento dos contratos em uma futura aplicação Android. A proposta detalhada está em `../web-demo-design.md`, aguardando revisão.
+A implementação web está disponível em `src/` e foi validada com testes de domínio e navegador. Uma arquitetura proposta para a etapa seguinte é uma interface responsiva com modelos de catálogo e perfil separados do acesso a dados, permitindo reaproveitamento dos contratos em uma futura aplicação Android. A proposta aprovada está em `../web-demo-design.md`.
 
 ## Arquivos de trabalho locais
 

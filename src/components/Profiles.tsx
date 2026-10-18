@@ -28,9 +28,10 @@ export function Profiles({
       <h2>Quem está assistindo?</h2>
       <p>Sua lista e suas próximas descobertas, do seu jeito.</p>
       <div className="profile-options">
-        {profiles.map((p) => (
+        {profiles.map((p, index) => (
           <button
             key={p.id}
+            style={{ animationDelay: `${index * 65}ms` }}
             aria-label={`Selecionar perfil ${p.name}`}
             aria-pressed={current === p.id}
             onClick={() => onSelect(p)}

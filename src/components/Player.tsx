@@ -15,12 +15,19 @@ export function Player({
 }) {
   const ref = useRef<HTMLVideoElement>(null);
   const [failed, setFailed] = useState(false);
-  const restored = useRef(false);
+  const restoring = useRef(true);
+  const resumeAt = useRef(
+    progress && progress.position / progress.duration < 0.95
+      ? progress.position
+      : 0,
+  );
   const lastSaved = useRef(-1);
   const save = () => {
     const video = ref.current;
-    if (video && video.readyState > 0)
+    if (video && video.readyState > 0 && !restoring.current) {
+      resumeAt.current = video.currentTime;
       onProgress(video.currentTime, video.duration);
+    }
   };
   const saveRef = useRef(save);
   saveRef.current = save;
@@ -71,10 +78,9 @@ export function Player({
           aria-label={`Vídeo de demonstração de ${title.name}`}
           onLoadedMetadata={() => {
             const video = ref.current!;
-            if (!restored.current) {
-              restored.current = true;
-              if (progress && progress.position / progress.duration < 0.95)
-                video.currentTime = Math.min(progress.position, video.duration);
+            if (restoring.current) {
+              video.currentTime = Math.min(resumeAt.current, video.duration);
+              restoring.current = false;
             }
           }}
           onTimeUpdate={() => {
@@ -87,7 +93,10 @@ export function Player({
           }}
           onPause={save}
           onEnded={save}
-          onError={() => setFailed(true)}
+          onError={() => {
+            save();
+            setFailed(true);
+          }}
           src={title.video}
         />
         {failed && (
@@ -98,6 +107,9 @@ export function Player({
             <button
               className="button primary"
               onClick={() => {
+                // load() resets currentTime and emits events: do not persist that reset.
+                restoring.current = true;
+                lastSaved.current = -1;
                 setFailed(false);
                 ref.current?.load();
                 void ref.current?.play().catch(() => {});

@@ -1,4 +1,5 @@
 import { useMemo, useState } from "react";
+import { useReveal, scrollBehavior } from "./useReveal";
 import { catalog, profiles } from "./data/catalog";
 import { filterTitles } from "./domain/catalog";
 import { browserStorage, createLibrary } from "./domain/storage";
@@ -40,7 +41,7 @@ export default function App() {
     setTab(next);
     setQuery("");
     setSearchOpen(false);
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    window.scrollTo({ top: 0, behavior: scrollBehavior() });
   };
   const selectProfile = (next: Profile) => {
     setProfile(next);
@@ -75,6 +76,7 @@ export default function App() {
     tab === "film" || tab === "series" ? tab : undefined,
   );
   const isHome = tab === "home" && !query.trim();
+  useReveal(`${tab}:${query}:${continueWatching.length}`);
   const headings = {
     home: "Todas as histórias",
     film: "Filmes para todos os momentos",
@@ -165,12 +167,18 @@ export default function App() {
                 subtitle="Histórias que merecem um lugar na sua lista."
                 titles={catalog.slice(1, 8)}
                 onDetails={setDetails}
+                onPlay={play}
+                onToggle={toggle}
+                savedIds={state.list}
               />
               {continueWatching.length > 0 && (
                 <TitleRow
                   name="Continue de onde parou"
                   titles={continueWatching}
                   onDetails={setDetails}
+                  onPlay={play}
+                  onToggle={toggle}
+                  savedIds={state.list}
                   progress={state.progress}
                 />
               )}
@@ -185,9 +193,12 @@ export default function App() {
                   catalog[8],
                 ]}
                 onDetails={setDetails}
+                onPlay={play}
+                onToggle={toggle}
+                savedIds={state.list}
                 ranked
               />
-              <section className="discovery-banner">
+              <section className="discovery-banner" data-reveal>
                 <img src="/media/ocean.jpg" alt="" loading="lazy" />
                 <div>
                   <span className="eyebrow">MUDE DE PERSPECTIVA</span>
@@ -202,7 +213,7 @@ export default function App() {
                     onClick={() => {
                       setQuery("Documentário");
                       setSearchOpen(true);
-                      window.scrollTo({ top: 0, behavior: "smooth" });
+                      window.scrollTo({ top: 0, behavior: scrollBehavior() });
                     }}
                   >
                     Explorar documentários
@@ -218,17 +229,23 @@ export default function App() {
                 name="Uma dose de aventura"
                 titles={filterTitles(catalog, "aventura")}
                 onDetails={setDetails}
+                onPlay={play}
+                onToggle={toggle}
+                savedIds={state.list}
               />
               <TitleRow
                 name="Cinema aberto, grandes histórias"
                 subtitle="Trailers de produções da Blender Foundation."
                 titles={catalog.slice(-2)}
                 onDetails={setDetails}
+                onPlay={play}
+                onToggle={toggle}
+                savedIds={state.list}
               />
             </div>
           </>
         ) : (
-          <section className="browse-page">
+          <section className="browse-page" key={`${tab}:${query}`}>
             <div className="browse-heading">
               <span className="eyebrow">SEU PRÓXIMO PLAY ESTÁ AQUI</span>
               <h1>
@@ -243,9 +260,16 @@ export default function App() {
               </p>
             </div>
             {results.length ? (
-              <div className="catalog-grid">
+              <div className="catalog-grid" data-list-view={tab === "list"}>
                 {results.map((t) => (
-                  <TitleCard key={t.id} title={t} onDetails={setDetails} />
+                  <TitleCard
+                    key={t.id}
+                    title={t}
+                    onDetails={setDetails}
+                    onPlay={play}
+                    onToggle={toggle}
+                    savedIds={state.list}
+                  />
                 ))}
               </div>
             ) : (
@@ -278,7 +302,7 @@ export default function App() {
           </section>
         )}
       </main>
-      <footer>
+      <footer data-reveal>
         <div className="footer-top">
           <a
             href="#"
